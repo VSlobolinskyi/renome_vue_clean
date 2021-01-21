@@ -1,0 +1,35 @@
+body {
+	margin: 0;
+	overflow-x: hidden;
+}
+
+.body--disable-scroll {
+	height: 100%;
+	overflow: hidden;
+}
+
+:root {
+	--crimson: #985E5B;
+	--white: #FFFFFF;
+	--black: #000000;
+	--inputGray: #BBBDBF;
+	--menuGray: #F0F0F0;
+	--lightGray: #F7F7F7;
+	--gray: #EDEFF2;
+	--darkBlue: #1d2533;
+}
+
+@font-face {
+	font-family: "Pacifico";
+	src: url("../assets/fonts/Pacifico.ttf");
+}
+
+@font-face {
+	font-family: "Axis";
+	src: url("../assets/fonts/axis.woff");
+}
+
+@font-face {
+	font-family: "Montserrat";
+	src: url("../assets/fonts/Montserrat-Bold.ttf");
+}

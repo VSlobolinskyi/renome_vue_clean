@@ -17,8 +17,6 @@
 </script>
 
 <style scoped>
-	@import "../../styles/variables.css";
-	@import "../../styles/fonts.css";
 	.about__text {
 		margin: 0;
 		padding: 0;

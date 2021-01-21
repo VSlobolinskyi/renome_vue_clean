@@ -1,15 +1,15 @@
 <template>
-	<p class="about__slogan">{{slogan.innerText}}</p>
+	<p class="gallery__slogan">{{slogan.innerText}}</p>
 </template>
 
 <script>
 	export default {
-		name: "aboutSlogan",
+		name: "gallerySlogan",
 		data() {
 			return {
 				slogan: {
 					id: 1,
-					innerText: "we create delecious memories"
+					innerText: "more about us via photos"
 				}
 			}
 		}
@@ -17,11 +17,12 @@
 </script>
 
 <style scoped>
-	.about__slogan {
-		text-transform: uppercase;
+	.gallery__slogan {
 		color: var(--crimson);
-		padding: 10px 0 10px;
+		text-align: center;
+		text-transform: uppercase;
 		margin: 0;
+		padding: 15px 0 30px;
 		font-size: 11px;
 		letter-spacing: 1px;
 		font-family: "Montserrat", "Ariel", "Times New Roman", "Times";

@@ -1,15 +1,15 @@
 <template>
-	<h2 class="about__title">{{title.innerText}}</h2>
+	<h2 class="gallery__title">{{title.innerText}}</h2>
 </template>
 
 <script>
 	export default {
-		name: "aboutTitle",
+		name: "galleryTilte",
 		data() {
 			return {
 				title: {
 					id: 1,
-					innerText: "about"
+					innerText: "gallery"
 				}
 			}
 		}
@@ -17,7 +17,8 @@
 </script>
 
 <style scoped>
-	.about__title {
+	.gallery__title {
+		text-align: center;
 		margin: 0;
 		padding: 0;
 		font-size: 38px;

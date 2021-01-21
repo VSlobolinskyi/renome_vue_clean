@@ -1,0 +1,19 @@
+<template>
+	 <img v-bind:src="img.src" v-bind:alt="img.alt" class="gallery__img" >
+</template>
+
+<script>
+	export default {
+		name: "galleryImage",
+		props: ["img"]
+	}
+</script>
+
+<style scoped>
+	.gallery__img {
+		display: block;
+		box-sizing: border-box;
+		width: 50%;
+		padding: 5px 5px;
+	}
+</style>
