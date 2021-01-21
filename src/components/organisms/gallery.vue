@@ -72,7 +72,6 @@
 </script>
 
 <style scoped>
-	@import "../../styles/variables.css";
 	.gallery {
 		display: flex;
 		flex-direction: column;
