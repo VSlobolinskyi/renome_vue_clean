@@ -1,0 +1,24 @@
+<template>
+  <div id="app">
+    <building/>
+		<about/>
+		<gallery/>
+		<tail/>
+  </div>
+</template>
+
+<script>
+	import building from "./components/molecules/Building.vue"
+	import about from "./components/molecules/About.vue"
+	import gallery from "./components/organisms/Gallery.vue"
+	import tail from "./components/organisms/Tail.vue"
+	export default {
+		name: "app",
+		components: {
+			building,
+			about,
+			gallery,
+			tail
+		}
+	}
+</script>
