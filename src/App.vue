@@ -3,19 +3,22 @@
     <building/>
 		<about/>
 		<gallery/>
+		<tail/>
   </div>
 </template>
 
 <script>
-	import building from "./components/molecules/building.vue"
-	import about from "./components/molecules/about.vue"
-	import gallery from "./components/organisms/gallery.vue"
+	import building from "./components/molecules/Building.vue"
+	import about from "./components/molecules/About.vue"
+	import gallery from "./components/organisms/Gallery.vue"
+	import tail from "./components/organisms/Tail.vue"
 	export default {
 		name: "app",
 		components: {
 			building,
 			about,
-			gallery
+			gallery,
+			tail
 		}
 	}
 </script>

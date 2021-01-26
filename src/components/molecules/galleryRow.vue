@@ -6,7 +6,7 @@
 </template>
 
 <script>
-	import galleryImage from "../atoms/galleryImage.vue"
+	import galleryImage from "../atoms/GalleryImage.vue"
 	export default {
 		name: "galleryRow",
 		props: ["row"],

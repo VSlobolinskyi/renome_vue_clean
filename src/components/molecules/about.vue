@@ -7,9 +7,9 @@
 </template>
 
 <script>
-import aboutTitle from "../atoms/aboutTitle.vue"
-import aboutSlogan from "../atoms/aboutSlogan.vue"
-import aboutText from "../atoms/aboutText.vue"
+import aboutTitle from "../atoms/AboutTitle.vue"
+import aboutSlogan from "../atoms/AboutSlogan.vue"
+import aboutText from "../atoms/AboutText.vue"
 export default {
 	name: "about",
 	components: {

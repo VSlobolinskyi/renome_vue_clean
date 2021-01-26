@@ -7,9 +7,9 @@
 </template>
 
 <script>
-	import galleryTitle from "../atoms/galleryTitle.vue"
-	import gallerySlogan from  "../atoms/gallerySlogan.vue"
-	import galleryRow from "../molecules/galleryRow.vue"
+	import galleryTitle from "../atoms/GalleryTitle.vue"
+	import gallerySlogan from  "../atoms/GallerySlogan.vue"
+	import galleryRow from "../molecules/GalleryRow.vue"
 	export default {
 		name: "gallery",
 		components: {

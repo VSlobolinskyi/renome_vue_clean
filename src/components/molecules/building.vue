@@ -6,8 +6,8 @@
 </template>
 
 <script>
-	import buildingImg1 from "../atoms/buildingImg1.vue"
-	import buildingImg2 from "../atoms/buildingImg2.vue"
+	import buildingImg1 from "../atoms/BuildingImg1.vue"
+	import buildingImg2 from "../atoms/BuildingImg2.vue"
 	export default {
 		name: "img2",
 		components: {
