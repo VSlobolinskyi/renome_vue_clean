@@ -1,6 +1,7 @@
 <template>
   <div id="app">
 		<navigation/>
+		<home/>
     <building/>
 		<about/>
 		<gallery/>
@@ -14,6 +15,7 @@
 	import gallery from "./components/organisms/Gallery.vue"
 	import tail from "./components/organisms/Tail.vue"
 	import navigation from "./components/organisms/Navigation.vue"
+	import home from "./components/organisms/Home.vue"
 	export default {
 		name: "app",
 		components: {
@@ -21,7 +23,8 @@
 			about,
 			gallery,
 			tail,
-			navigation
+			navigation,
+			home
 		}
 	}
 </script>
