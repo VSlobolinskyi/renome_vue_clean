@@ -5,7 +5,7 @@
     <building/>
 		<about/>
 		<gallery/>
-		<tail/>
+		<tail/>		
   </div>
 </template>
 

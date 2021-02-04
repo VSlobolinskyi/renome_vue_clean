@@ -1,6 +1,6 @@
 <template>
 	<div class="home__arrow-container">
-		<homeArrow v-bind:arrow="arrow" v-bind:key="arrow.id" v-for="arrow in arrows"/>
+		<homeArrow v-bind:containers="containers" v-bind:arrow="arrow" v-bind:counter="counter" v-bind:key="arrow.id" v-for="arrow in arrows"/>
 	</div>
 </template>
 
@@ -8,6 +8,7 @@
 	import homeArrow from "../atoms/HomeArrow.vue"
 	export default {
 		name: "homeArrowContainer",
+		props: ["containers"],
 		components: {
 			homeArrow
 		},
@@ -17,14 +18,17 @@
 					{
 						id: 1,
 						src: require("../../assets/icons/arrow_left_white.svg"),
-						alt: "White arrow left"
+						alt: "White arrow left",
+						direction: 'left'
 					},
 					{
 						id: 2,
 						src: require("../../assets/icons/arrow_right_white.svg"),
-						alt: "White arrow right"
+						alt: "White arrow right",
+						direction: 'right'
 					}
-				]
+				],
+				counter: 0
 			}
 		}
 	}

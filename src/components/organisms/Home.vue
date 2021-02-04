@@ -1,17 +1,17 @@
 <template>
-	<div class="home" style="background-color: black;">
+	<div class="home">
 		<homeImageContainer v-bind:imageContainer="imageContainer" v-bind:key="imageContainer.id" v-for="imageContainer in containers"/>
-		<homeArrowContainer/>
+		<HomeArrowContainer v-bind:containers="containers"/>
 	</div>
 </template>
 
 <script>
-	import homeArrowContainer from "../molecules/HomeArrowContainer.vue"
+	import HomeArrowContainer from "../molecules/HomeArrowContainer.vue"
 	import homeImageContainer from "../molecules/HomeImageContainer.vue"
 	export default {
 		name: "home",
 		components: {
-			homeArrowContainer,
+			HomeArrowContainer,
 			homeImageContainer
 		},
 		data() {
@@ -20,6 +20,7 @@
 					{
 						id: 1,
 						isHidden: 0,
+						isTop: 1,
 						img: {
 							src: require("../../assets/images/carousel_img_1.png"),
 							alt: "Delecious omlette"
@@ -31,7 +32,8 @@
 					},
 					{
 						id: 2,
-						isHidden: 0,
+						isHidden: 1,
+						isTop: 1,
 						img: {
 							src: require("../../assets/images/carousel_img_2.png"),
 							alt: "Captivating desert"
@@ -43,7 +45,8 @@
 					},
 					{
 						id: 3,
-						isHidden: 0,
+						isHidden: 1,
+						isTop: 1,
 						img: {
 							src: require("../../assets/images/carousel_img_3.png"),
 							alt: "Fragrant spices"

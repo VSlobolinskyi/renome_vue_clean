@@ -1,19 +1,19 @@
 <template>
 	<div class="home__text-box">
-		<homeTextWHite v-bind:textWhite="text.textWhite"/>
-		<homeTextWHite v-bind:textCrimson="text.textCrimson"/>
+		<HomeTextWhite v-bind:textWhite="text.whiteText"/>
+		<HomeTextCrimson v-bind:textCrimson="text.crimsionText"/>
 	</div>
 </template>
 
 <script>
-	import homeTextWhite from "../../assets/HomeTextWhite.vue"
-	import homeTextCrimson from "../../assets/HomeTextCrimson.vue"
+	import HomeTextWhite from "../atoms/HomeTextWhite.vue"
+	import HomeTextCrimson from "../atoms/HomeTextCrimson.vue"
 	export default {
 		name: "homeTextBox",
 		props: ["text"],
 		components: {
-			homeTextWhite,
-			homeTextCrimson
+			HomeTextWhite,
+			HomeTextCrimson
 		}
 	}
 </script>
