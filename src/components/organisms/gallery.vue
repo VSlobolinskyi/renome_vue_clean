@@ -1,21 +1,21 @@
 <template>
 	<div class="gallery">
-		<galleryTitle/>
-		<gallerySlogan/>
-		<galleryRow v-bind:row="row" v-bind:key="row.rowId" v-for="row in galleryContent" />
+		<GalleryTitle/>
+		<GallerySlogan/>
+		<GalleryRow v-bind:row="row" v-bind:key="row.rowId" v-for="row in galleryContent" />
 	</div>
 </template>
 
 <script>
-	import galleryTitle from "../atoms/GalleryTitle.vue"
-	import gallerySlogan from  "../atoms/GallerySlogan.vue"
-	import galleryRow from "../molecules/GalleryRow.vue"
+	import GalleryTitle from "../atoms/GalleryTitle.vue"
+	import GallerySlogan from  "../atoms/GallerySlogan.vue"
+	import GalleryRow from "../molecules/GalleryRow.vue"
 	export default {
 		name: "gallery",
 		components: {
-			galleryTitle,
-			gallerySlogan,
-			galleryRow
+			GalleryTitle,
+			GallerySlogan,
+			GalleryRow
 		},
 		data() {
 			return {

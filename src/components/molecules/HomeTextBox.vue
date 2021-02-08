@@ -1,7 +1,7 @@
 <template>
 	<div class="home__text-box">
-		<HomeTextWhite v-bind:textWhite="text.whiteText"/>
-		<HomeTextCrimson v-bind:textCrimson="text.crimsionText"/>
+		<HomeTextWhite v-bind:text="textBox.title"/>
+		<HomeTextCrimson v-bind:text="textBox.subTitle"/>
 	</div>
 </template>
 
@@ -10,7 +10,7 @@
 	import HomeTextCrimson from "../atoms/HomeTextCrimson.vue"
 	export default {
 		name: "homeTextBox",
-		props: ["text"],
+		props: ["textBox"],
 		components: {
 			HomeTextWhite,
 			HomeTextCrimson

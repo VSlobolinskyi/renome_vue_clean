@@ -1,72 +1,64 @@
 {
-  "menu": [
-    {
-      "title": "Search"
-    },
-    {
-      "title": "Home",
-      "url": "#"
-    },
-    {
-      "title": "About",
-      "url": "#"
-    },
-    {
-      "title": "Menu",
-      "url": "#"
-    },
-    {
-      "title": "Blog",
-      "url": "#"
-    },
-    {
-      "title": "Features",
-      "isSubMenu": true,
-      "url": "#",
-      "subMenu": [
+  "carousel": {
+    "arrowContainer": {
+      "arrows": [
         {
-          "title": "One page",
-          "url": "#"
+          "id": 1,
+          "src": "arrow_left_white.svg",
+          "alt": "White arrow left",
+          "direction": "left"
         },
         {
-          "title": "Protfolio",
-          "url": "#"
-        },
-        {
-          "title": "Shortcodes",
-          "url": "#"
+          "id": 2,
+          "src": "arrow_right_white.svg",
+          "alt": "White arrow right",
+          "direction": "right"
         }
-      ]
+      ],
+      "counter": 0
     },
-    {
-      "title": "Shop",
-      "url": "#"
-    },
-    {
-      "title": "Contact",
-      "url": "#"
-    }
-  ],
-  "carousel": [
-    {
-      "title": "Made with love",
-      "subTitle": "for you",
-      "altTag": "eggs and chicken",
-      "path": "/assets/img/carousel_img_1.png"
-    },
-    {
-      "title": "Made with hate",
-      "subTitle": "for myself",
-      "altTag": "something more",
-      "path": "/assets/img/carousel_img_2.png"
-    },
-    {
-      "title": "Oranges and laptops",
-      "subTitle": "for everyone",
-      "altTag": "oranges and laptops",
-      "path": "/assets/img/carousel_img_3.png"
-    }
-  ],
+    "imageContainers": [
+      {
+        "id": 1,
+        "isHidden": 0,
+        "isTop": 1,
+        "img": {
+          "src": "carousel_img_1.png",
+          "alt": "Delecious omlette"
+        },
+        "textBox": {
+          "title": "made with love 1",
+          "subTitle": "for you 1"
+        }
+      },
+      {
+        "id": 2,
+        "isHidden": 1,
+        "isTop": 1,
+        "img": {
+          "src": "carousel_img_2.png",
+          "alt": "Captivating desert"
+        },
+        "textBox": {
+          "title": "made with love 2",
+          "subTitle": "for you 2"
+        }
+      },
+      {
+        "id": 3,
+        "isHidden": 1,
+        "isTop": 1,
+        "img": {
+          "src": "carousel_img_3.png",
+          "alt": "Fragrant spices"
+        },
+        "textBox": {
+          "title": "made with love 3",
+          "subTitle": "for you 3"
+        }
+      }
+    ]
+  },  
   "about": {
     "title": "about",
     "subTitle": "we create delicious memories",

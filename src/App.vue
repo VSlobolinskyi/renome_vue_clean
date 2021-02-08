@@ -1,30 +1,30 @@
 <template>
   <div id="app">
-		<navigation/>
-		<home/>
-    <building/>
-		<about/>
-		<gallery/>
-		<tail/>		
+		<Navigation/>
+		<Home/>
+    <Building/>
+		<About/>
+		<Gallery/>
+		<Tail/>
   </div>
 </template>
 
 <script>
-	import building from "./components/molecules/Building.vue"
-	import about from "./components/molecules/About.vue"
-	import gallery from "./components/organisms/Gallery.vue"
-	import tail from "./components/organisms/Tail.vue"
-	import navigation from "./components/organisms/Navigation.vue"
-	import home from "./components/organisms/Home.vue"
+	import Building from "./components/molecules/Building.vue"
+	import About from "./components/molecules/About.vue"
+	import Gallery from "./components/organisms/Gallery.vue"
+	import Tail from "./components/organisms/Tail.vue"
+	import Navigation from "./components/organisms/Navigation.vue"
+	import Home from "./components/organisms/Home.vue"
 	export default {
 		name: "app",
 		components: {
-			building,
-			about,
-			gallery,
-			tail,
-			navigation,
-			home
+			Building,
+			About,
+			Gallery,
+			Tail,
+			Navigation,
+			Home
 		}
 	}
 </script>

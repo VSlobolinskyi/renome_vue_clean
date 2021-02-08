@@ -2,7 +2,7 @@
 	<div v-bind:class="{'home__img-container--top': imageContainer.isTop, 'home__img-container--hidden': imageContainer.isHidden}" class="home__img-container">
 		<HomeImageShader/>
 		<HomeImage v-bind:image="imageContainer.img"/>
-		<HomeTextBox v-bind:text="imageContainer.textBox"/>
+		<HomeTextBox v-bind:textBox="imageContainer.textBox"/>
 	</div>
 </template>
 
