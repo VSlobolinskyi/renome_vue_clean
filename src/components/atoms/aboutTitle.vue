@@ -1,14 +1,16 @@
 <template>
-	<h2 class="about__title">{{about.title}}</h2>
+	<h2 class="about__title">{{title.innerText}}</h2>
 </template>
 
 <script>
-	import json from "../../../data/structure.json"
 	export default {
 		name: "aboutTitle",
 		data() {
 			return {
-				about: json.about
+				title: {
+					id: 1,
+					innerText: "about"
+				}
 			}
 		}
 	}
