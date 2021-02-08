@@ -2,7 +2,7 @@
 	<div class="gallery">
 		<GalleryTitle/>
 		<GallerySlogan/>
-		<GalleryRow v-bind:row="row" v-bind:key="row.rowId" v-for="row in galleryContent" />
+		<GalleryRow v-bind:row="row" v-bind:key="row.rowId" v-for="row in rows" />
 	</div>
 </template>
 
@@ -10,6 +10,7 @@
 	import GalleryTitle from "../atoms/GalleryTitle.vue"
 	import GallerySlogan from  "../atoms/GallerySlogan.vue"
 	import GalleryRow from "../molecules/GalleryRow.vue"
+	import json from "../../../data/structure.json"
 	export default {
 		name: "gallery",
 		components: {
@@ -19,53 +20,7 @@
 		},
 		data() {
 			return {
-				galleryContent: [
-					{
-						rowId: 1,
-						images: [
-							{
-								imgId: 1,
-								src: require("../../assets/images/gallery_img_1.png"),
-								alt: "Restorant building view"
-							},
-							{
-								imgId: 2,
-								src: require("../../assets/images/gallery_img_2.png"),
-								alt: "Small restorant building view"
-							}
-						]
-					},
-					{
-						rowId: 2,
-						images: [
-							{
-								imgId: 1,
-								src: require("../../assets/images/gallery_img_3.png"),
-								alt: "Inside retorant view"
-							},
-							{
-								imgId: 2,
-								src: require("../../assets/images/gallery_img_4.png"),
-								alt: "Everyday specials banner"
-							}
-						]
-					},
-					{
-						rowId: 3,
-						images: [
-							{
-								imgId: 1,
-								src: require("../../assets/images/gallery_img_5.png"),
-								alt: "Salads"
-							},
-							{
-								imgId: 2,
-								src: require("../../assets/images/gallery_img_6.png"),
-								alt: "Snaks"
-							}
-						]
-					}
-				]
+				rows: json.gallery.galleryRows
 			}
 		}
 	}

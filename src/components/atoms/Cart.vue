@@ -1,17 +1,14 @@
 <template>
-	<img v-bind:alt="cart.alt" v-bind:src="cart.src" class="icons__cart">
+	<img v-bind:alt="cart.alt" v-bind:src="require(`../../assets/icons/${cart.src}`)" class="icons__cart">
 </template>
 
 <script>
+	import json from "../../../data/structure.json"
 	export default {
 		name: "cart",
-		data () {
+		data() {
 			return {
-				cart: {
-					id: 1,
-					alt: "Cart icon",
-					src: require("../../assets/icons/cart_icon.svg")
-				}
+				cart: json.navigation.navigationIcons.cart
 			}
 		}
 	}

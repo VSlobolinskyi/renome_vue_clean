@@ -1,4 +1,13 @@
 {
+  "navigation": {
+    "logo": "Renome",
+    "navigationIcons": {
+      "cart": {
+        "alt": "Cart icon",
+        "src": "cart_icon.svg"
+      }
+    }
+  },
   "carousel": {
     "arrowContainer": {
       "arrows": [
@@ -67,24 +76,51 @@
   "gallery": {
     "title": "Gallery",
     "subTitle": "More about us via photos",
-    "galleryImages": [
+    "galleryRows": [
       {
-        "path": "/assets/img/gallery_img_1.png"
+        "rowId": 1,
+        "images": [
+          {
+            "imgId": 1,
+            "src": "gallery_img_1.png",
+            "alt": "Restorant building view"
+          },
+          {
+            "imgId": 2,
+            "src": "gallery_img_2.png",
+            "alt": "Small restorant building view"
+          }
+        ]
       },
       {
-        "path": "/assets/img/gallery_img_2.png"
+        "rowId": 2,
+        "images": [
+          {
+            "imgId": 1,
+            "src": "gallery_img_3.png",
+            "alt": "Inside retorant view"
+          },
+          {
+            "imgId": 2,
+            "src": "gallery_img_4.png",
+            "alt": "Everyday specials banner"
+          }
+        ]
       },
       {
-        "path": "/assets/img/gallery_img_3.png"
-      },
-      {
-        "path": "/assets/img/gallery_img_4.png"
-      },
-      {
-        "path": "/assets/img/gallery_img_5.png"
-      },
-      {
-        "path": "/assets/img/gallery_img_6.png"
+        "rowId": 3,
+        "images": [
+          {
+            "imgId": 1,
+            "src": "gallery_img_5.png",
+            "alt": "Salads"
+          },
+          {
+            "imgId": 2,
+            "src": "gallery_img_6.png",
+            "alt": "Snaks"
+          }
+        ]
       }
     ]
   }
