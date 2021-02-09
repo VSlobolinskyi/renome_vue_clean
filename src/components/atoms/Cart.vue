@@ -9,7 +9,8 @@
 			return {
 				cart: {
 					id: 1,
-				
+					alt: "Cart icon",
+					src: require("../../assets/icons/cart_icon.svg")
 				}
 			}
 		}
