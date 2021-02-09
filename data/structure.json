@@ -67,6 +67,20 @@
         }
       }
     ]
+  },
+  "building": {
+    "images": [ 
+      {
+        "id": 1,
+        "src": "about_img_2.png",
+        "alt": "Restorant full building view"
+      },
+      {
+				"id": 2,
+				"src": "about_img_1.png",
+				"alt": "Restorant enterance door view"
+			}
+    ]
   },  
   "about": {
     "title": "about",

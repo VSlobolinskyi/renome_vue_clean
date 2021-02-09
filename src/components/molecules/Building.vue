@@ -1,18 +1,21 @@
 <template>
 	<div>
-		<BuildingImg1/>
-		<BuildingImg2/>
+		<BuildingImage v-bind:image="image" v-bind:key="image.id" v-for="image in images"/>
 	</div>	
 </template>
 
 <script>
-	import BuildingImg1 from "../atoms/BuildingImg1.vue"
-	import BuildingImg2 from "../atoms/BuildingImg2.vue"
+	import BuildingImage from "../atoms/BuildingImage.vue"
+	import json from "../../../data/structure.json"
 	export default {
 		name: "img2",
 		components: {
-			BuildingImg1,
-			BuildingImg2
+			BuildingImage
+		},
+		data() {
+			return {
+				images: json.building.images
+			}
 		}
 	}
 </script>
