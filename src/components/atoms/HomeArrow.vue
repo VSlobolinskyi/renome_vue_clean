@@ -1,13 +1,13 @@
 <template>
-	<div v-on:click="$emit('traverse', arrow.direction)" class="home__arrow-outline">
-		<img v-bind:src="require(`../../assets/icons/${arrow.src}`)" v-bind:alt="arrow.alt" class="home__arrow">
+	<div class="home__arrow-outline">
+		<img v-bind:src="arrow.src" v-bind:alt="arrow.alt" class="home__arrow">
 	</div>
 </template>
 
 <script>
 	export default {
 		name: "homeArrow",
-		props: ['arrow']
+		props: ["arrow"]
 	}
 </script>
 

@@ -1,11 +1,11 @@
 <template>
-	<p class="home__text-white">{{text}}</p>
+	<p class="home__text-white">{{textWhite}}</p>
 </template>
 
 <script>
 	export default {
 		name: "homeTextWhite",
-		props: ["text"]
+		props: ["textWhite"]
 	}
 </script>
 
