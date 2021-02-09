@@ -1,16 +1,14 @@
 <template>
-	<p class="about__slogan">{{slogan.innerText}}</p>
+	<p class="about__slogan">{{about.subTitle}}</p>
 </template>
 
 <script>
+	import json from "../../../data/structure.json"
 	export default {
 		name: "aboutSlogan",
 		data() {
 			return {
-				slogan: {
-					id: 1,
-					innerText: "we create delecious memories"
-				}
+				about: json.about
 			}
 		}
 	}
