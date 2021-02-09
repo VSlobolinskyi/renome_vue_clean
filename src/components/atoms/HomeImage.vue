@@ -1,5 +1,5 @@
 <template>
-	<img v-bind:src="image.src" v-bind:alt="image.alt" class="home__img"> 
+	<img v-bind:src="require(`../../assets/images/${image.src}`)" v-bind:alt="image.alt" class="home__img"> 
 </template>
 
 <script>

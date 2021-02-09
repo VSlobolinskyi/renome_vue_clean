@@ -1,27 +1,27 @@
 <template>
 	<div class="icons">
-		<cart/>
-		<cartStatus/>
-		<stick/>
-		<hamburgerButton/>
-		<corss/>
+		<Cart/>
+		<CartStatus/>
+		<Stick/>
+		<HamburgerButton/>
+		<Corss/>
 	</div>	
 </template>
 
 <script>
-	import cart from "../atoms/Cart.vue"
-	import stick from "../atoms/Stick.vue"
-	import corss from "../atoms/Cross.vue"
-	import hamburgerButton from "../atoms/HamburgerButton.vue"
-	import cartStatus from "../atoms/CartStatus.vue"
+	import Cart from "../atoms/Cart.vue"
+	import Stick from "../atoms/Stick.vue"
+	import Corss from "../atoms/Cross.vue"
+	import HamburgerButton from "../atoms/HamburgerButton.vue"
+	import CartStatus from "../atoms/CartStatus.vue"
 	export default {
 		name: "navigationIcons",
 		components: {
-			cart,
-			cartStatus,
-			stick,
-			hamburgerButton,
-			corss
+			Cart,
+			CartStatus,
+			Stick,
+			HamburgerButton,
+			Corss
 		}
 	}
 </script>

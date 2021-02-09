@@ -1,59 +1,59 @@
 <template>
-	<div class="home" style="background-color: black;">
-		<homeImageContainer v-bind:imageContainer="imageContainer" v-bind:key="imageContainer.id" v-for="imageContainer in containers"/>
-		<homeArrowContainer/>
+	<div class="home">
+		<HomeImageContainer v-bind:imageContainer="imageContainer" v-bind:key="imageContainer.id" v-for="imageContainer in imageContainers"/>
+		<HomeArrowContainer v-on:traverse="switchImage" v-bind:arrows="arrowContainer"/>
 	</div>
 </template>
 
 <script>
-	import homeArrowContainer from "../molecules/HomeArrowContainer.vue"
-	import homeImageContainer from "../molecules/HomeImageContainer.vue"
+	import HomeArrowContainer from "../molecules/HomeArrowContainer.vue"
+	import HomeImageContainer from "../molecules/HomeImageContainer.vue"
+	import json from "../../../data/structure.json"
 	export default {
 		name: "home",
 		components: {
-			homeArrowContainer,
-			homeImageContainer
+			HomeArrowContainer,
+			HomeImageContainer
+		},
+		methods: {
+			switchImage(direction) {
+				const imagesInCarousel = this.imageContainers.length;
+				let active = 0;
+				for (; active < imagesInCarousel-1 ; active++) {
+					if (!this.imageContainers[active].isHidden){
+						break;
+					}
+				}
+				if (direction == 'left'){
+					this.imageContainers[active].isTop = 1;
+					this.imageContainers[active].isHidden = 1;
+					if(active == 0){
+						active = imagesInCarousel-1;
+					}
+					else {
+						active--;
+					}
+					this.imageContainers[active].isTop = 0;
+					this.imageContainers[active].isHidden = 0;
+				}
+				if (direction == 'right') {
+					this.imageContainers[active].isTop = 0;
+					this.imageContainers[active].isHidden = 1;
+					if(active == imagesInCarousel-1){
+						active = 0;
+					}
+					else {
+						active++;
+					}
+					this.imageContainers[active].isTop = 1;
+					this.imageContainers[active].isHidden = 0;
+				}
+			}
 		},
 		data() {
 			return {
-				containers: [
-					{
-						id: 1,
-						isHidden: 0,
-						img: {
-							src: require("../../assets/images/carousel_img_1.png"),
-							alt: "Delecious omlette"
-						},
-						textBox: {
-							whiteText: "made with love 1",
-							crimsonText: "for you 1"
-						}
-					},
-					{
-						id: 2,
-						isHidden: 0,
-						img: {
-							src: require("../../assets/images/carousel_img_2.png"),
-							alt: "Captivating desert"
-						},
-						textBox: {
-							whiteText: "made with love 2",
-							crimsonText: "for you 2"
-						}
-					},
-					{
-						id: 3,
-						isHidden: 0,
-						img: {
-							src: require("../../assets/images/carousel_img_3.png"),
-							alt: "Fragrant spices"
-						},
-						textBox: {
-							whiteText: "made with love 3",
-							crimsonText: "for you 3"
-						}
-					}
-				]
+					arrowContainer: json.carousel.arrowContainer,
+					imageContainers: json.carousel.imageContainers
 			}
 		}
 	}
