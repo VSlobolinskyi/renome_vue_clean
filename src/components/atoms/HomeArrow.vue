@@ -24,7 +24,6 @@
 		cursor: pointer;
 		-webkit-tap-highlight-color: transparent;
 	}
-
 	.home__arrow {
 		width: 24px;
 		height: 40px;
