@@ -1,24 +1,24 @@
 <template>
 	<div class="tail">
-		<followUs/>
-		<socialNetworks/>
-		<tailLogo/>
-		<copyright/>
+		<FollowUs/>
+		<SocialNetworks/>
+		<TailLogo/>
+		<Copyright/>
 	</div>
 </template>
 
 <script>
-	import tailLogo from "../atoms/TailLogo.vue"
-	import copyright from "../atoms/Copyright.vue"
-	import followUs from "../atoms/FollowUs.vue"
-	import socialNetworks from "../molecules/SocialNetworks.vue"
+	import TailLogo from "../atoms/TailLogo.vue"
+	import Copyright from "../atoms/Copyright.vue"
+	import FollowUs from "../atoms/FollowUs.vue"
+	import SocialNetworks from "../molecules/SocialNetworks.vue"
 	export default {
 		name: "tail",
 		components: {
-			tailLogo,
-			copyright,
-			followUs,
-			socialNetworks
+			TailLogo,
+			Copyright,
+			FollowUs,
+			SocialNetworks
 		}
 	}
 </script>

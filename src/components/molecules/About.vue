@@ -1,21 +1,21 @@
 <template>
 	<div class="about">
-		<aboutTitle/>
-		<aboutSlogan/>
-		<aboutText/>
+		<AboutTitle/>
+		<AboutSlogan/>
+		<AboutText/>
 	</div>
 </template>
 
 <script>
-import aboutTitle from "../atoms/AboutTitle.vue"
-import aboutSlogan from "../atoms/AboutSlogan.vue"
-import aboutText from "../atoms/AboutText.vue"
+import AboutTitle from "../atoms/AboutTitle.vue"
+import AboutSlogan from "../atoms/AboutSlogan.vue"
+import AboutText from "../atoms/AboutText.vue"
 export default {
 	name: "about",
 	components: {
-		aboutTitle,
-		aboutSlogan,
-		aboutText
+		AboutTitle,
+		AboutSlogan,
+		AboutText
 	}
 }
 </script>
