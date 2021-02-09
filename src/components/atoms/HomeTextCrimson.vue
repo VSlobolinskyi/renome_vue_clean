@@ -1,11 +1,11 @@
 <template>
-	<p class="home__text-crimson">{{text}}</p>
+	<p class="home__text-crimson">{{textCrimson}}</p>
 </template>
 
 <script>
 	export default {
 		name: "homeTextCrimson",
-		props: ["text"]
+		props: ["textCrimson"]
 	}
 </script>
 

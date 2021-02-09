@@ -1,14 +1,16 @@
 <template>
-	<p class="gallery__slogan">{{text}}</p>
+	<p class="gallery__slogan">{{slogan.innerText}}</p>
 </template>
 
 <script>
-	import json from "../../../data/structure.json"
 	export default {
 		name: "gallerySlogan",
 		data() {
 			return {
-				text: json.gallery.subtitle
+				slogan: {
+					id: 1,
+					innerText: "more about us via photos"
+				}
 			}
 		}
 	}

@@ -1,21 +1,31 @@
 <template>
 	<div class="home__arrow-container">
-		<HomeArrow v-on:traverse="$emit('traverse', arrow.direction)" v-bind:arrow="arrow" v-bind:key="arrow.id" v-for="arrow in arrows"/>
+		<homeArrow v-bind:arrow="arrow" v-bind:key="arrow.id" v-for="arrow in arrows"/>
 	</div>
 </template>
 
 <script>
-	import HomeArrow from "../atoms/HomeArrow.vue"
-	import json from "../../../data/structure.json"
+	import homeArrow from "../atoms/HomeArrow.vue"
 	export default {
 		name: "homeArrowContainer",
 		components: {
-			HomeArrow
+			homeArrow
 		},
 		data () {
 			return {
-				arrows: json.carousel.arrowContainer.arrows
-			}				
+				arrows: [
+					{
+						id: 1,
+						src: require("../../assets/icons/arrow_left_white.svg"),
+						alt: "White arrow left"
+					},
+					{
+						id: 2,
+						src: require("../../assets/icons/arrow_right_white.svg"),
+						alt: "White arrow right"
+					}
+				]
+			}
 		}
 	}
 </script>

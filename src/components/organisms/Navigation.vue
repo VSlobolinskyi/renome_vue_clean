@@ -1,18 +1,18 @@
 <template>
 	<div class="navigation">
-		<NavigationLogo/>
-		<NavigationIcons/>
+		<navigationLogo/>
+		<navigationIcons/>
 	</div>	
 </template>
 
 <script>
-	import NavigationLogo from "../atoms/NavigationLogo.vue"
-	import NavigationIcons from "../molecules/NavigationIcons.vue"
+	import navigationLogo from "../atoms/NavigationLogo.vue"
+	import navigationIcons from "../molecules/NavigationIcons.vue"
 	export default {
 		name: "navigation",
 		components: {
-			NavigationLogo,
-			NavigationIcons
+			navigationLogo,
+			navigationIcons
 		}
 	}
 </script>

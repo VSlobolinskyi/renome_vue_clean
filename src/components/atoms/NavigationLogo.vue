@@ -1,14 +1,16 @@
 <template>
-	<p class="navigation__logo">{{text}}</p>
+	<p class="navigation__logo">{{logo.innerText}}</p>
 </template>
 
 <script>
-	import json from "../../../data/structure.json"
 	export default {
 		name: "navigationLogo",
 		data() {
 			return {
-				text: json.navigation.logo
+				logo: {
+					id: 1,
+					innerText: "Renome"
+				}
 			}
 		}
 	}

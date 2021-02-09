@@ -1,21 +1,19 @@
 <template>
-	<div v-bind:class="{'home__img-container--top': imageContainer.isTop, 'home__img-container--hidden': imageContainer.isHidden}" class="home__img-container">
-		<HomeImageShader/>
-		<HomeImage v-bind:image="imageContainer.img"/>
-		<HomeTextBox v-bind:textBox="imageContainer.textBox"/>
+	<div v-bind:class="{'hidden': imageContainer.isHidden}" class="home__img-container ">
+		<homeImageShader/>
+		<homeImage v-bind:image="imageContainer.image"/>
+		
 	</div>
 </template>
 
 <script>
-	import HomeImageShader from "../atoms/HomeImageShader.vue"
-	import HomeImage from "../atoms/HomeImage.vue"
-	import HomeTextBox from "./HomeTextBox.vue"
+	import homeImageShader from "../atoms/HomeImageShader.vue"
+	import homeImage from "../atoms/HomeImage.vue"
 	export default {
 		name: "homeImageContainer",
 		components: {
-			HomeImageShader,
-			HomeImage,
-			HomeTextBox
+			homeImageShader,
+			homeImage
 		},
 		props: ["imageContainer"]
 	}
@@ -31,10 +29,7 @@
 		width: 100vw;
 		transition: left 0.4s;
 	}	
-	.home__img-container--hidden {
+	.hidden {
 		left: 100vw;
-	}
-	.home__img-container--top {
-		z-index: 1;
 	}
 </style>

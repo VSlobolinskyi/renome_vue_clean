@@ -1,73 +1,72 @@
 {
-  "navigation": {
-    "logo": "Renome",
-    "navigationIcons": {
-      "cart": {
-        "alt": "Cart icon",
-        "src": "cart_icon.svg"
-      }
-    }
-  },
-  "carousel": {
-    "arrowContainer": {
-      "arrows": [
-        {
-          "id": 1,
-          "src": "arrow_left_white.svg",
-          "alt": "White arrow left",
-          "direction": "left"
-        },
-        {
-          "id": 2,
-          "src": "arrow_right_white.svg",
-          "alt": "White arrow right",
-          "direction": "right"
-        }
-      ],
-      "counter": 0
+  "menu": [
+    {
+      "title": "Search"
     },
-    "imageContainers": [
-      {
-        "id": 1,
-        "isHidden": 0,
-        "isTop": 1,
-        "img": {
-          "src": "carousel_img_1.png",
-          "alt": "Delecious omlette"
+    {
+      "title": "Home",
+      "url": "#"
+    },
+    {
+      "title": "About",
+      "url": "#"
+    },
+    {
+      "title": "Menu",
+      "url": "#"
+    },
+    {
+      "title": "Blog",
+      "url": "#"
+    },
+    {
+      "title": "Features",
+      "isSubMenu": true,
+      "url": "#",
+      "subMenu": [
+        {
+          "title": "One page",
+          "url": "#"
         },
-        "textBox": {
-          "title": "made with love 1",
-          "subTitle": "for you 1"
-        }
-      },
-      {
-        "id": 2,
-        "isHidden": 1,
-        "isTop": 1,
-        "img": {
-          "src": "carousel_img_2.png",
-          "alt": "Captivating desert"
+        {
+          "title": "Protfolio",
+          "url": "#"
         },
-        "textBox": {
-          "title": "made with love 2",
-          "subTitle": "for you 2"
+        {
+          "title": "Shortcodes",
+          "url": "#"
         }
-      },
-      {
-        "id": 3,
-        "isHidden": 1,
-        "isTop": 1,
-        "img": {
-          "src": "carousel_img_3.png",
-          "alt": "Fragrant spices"
-        },
-        "textBox": {
-          "title": "made with love 3",
-          "subTitle": "for you 3"
-        }
-      }
-    ]
-  },  
+      ]
+    },
+    {
+      "title": "Shop",
+      "url": "#"
+    },
+    {
+      "title": "Contact",
+      "url": "#"
+    }
+  ],
+  "carousel": [
+    {
+      "title": "Made with love",
+      "subTitle": "for you",
+      "altTag": "eggs and chicken",
+      "path": "/assets/img/carousel_img_1.png"
+    },
+    {
+      "title": "Made with hate",
+      "subTitle": "for myself",
+      "altTag": "something more",
+      "path": "/assets/img/carousel_img_2.png"
+    },
+    {
+      "title": "Oranges and laptops",
+      "subTitle": "for everyone",
+      "altTag": "oranges and laptops",
+      "path": "/assets/img/carousel_img_3.png"
+    }
+  ],
   "about": {
     "title": "about",
     "subTitle": "we create delicious memories",
@@ -76,51 +75,24 @@
   "gallery": {
     "title": "Gallery",
     "subTitle": "More about us via photos",
-    "galleryRows": [
+    "galleryImages": [
       {
-        "rowId": 1,
-        "images": [
-          {
-            "imgId": 1,
-            "src": "gallery_img_1.png",
-            "alt": "Restorant building view"
-          },
-          {
-            "imgId": 2,
-            "src": "gallery_img_2.png",
-            "alt": "Small restorant building view"
-          }
-        ]
+        "path": "/assets/img/gallery_img_1.png"
       },
       {
-        "rowId": 2,
-        "images": [
-          {
-            "imgId": 1,
-            "src": "gallery_img_3.png",
-            "alt": "Inside retorant view"
-          },
-          {
-            "imgId": 2,
-            "src": "gallery_img_4.png",
-            "alt": "Everyday specials banner"
-          }
-        ]
+        "path": "/assets/img/gallery_img_2.png"
       },
       {
-        "rowId": 3,
-        "images": [
-          {
-            "imgId": 1,
-            "src": "gallery_img_5.png",
-            "alt": "Salads"
-          },
-          {
-            "imgId": 2,
-            "src": "gallery_img_6.png",
-            "alt": "Snaks"
-          }
-        ]
+        "path": "/assets/img/gallery_img_3.png"
+      },
+      {
+        "path": "/assets/img/gallery_img_4.png"
+      },
+      {
+        "path": "/assets/img/gallery_img_5.png"
+      },
+      {
+        "path": "/assets/img/gallery_img_6.png"
       }
     ]
   }

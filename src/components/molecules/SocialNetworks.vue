@@ -1,15 +1,15 @@
 <template>
 	<div class="social-networks">
-		<SocialNetworkIcon v-bind:icon="icon" v-bind:key="icon.id" v-for="icon in icons" />
+		<socialNetworkIcon v-bind:icon="icon" v-bind:key="icon.id" v-for="icon in icons" />
 	</div>
 </template>
 
 <script>
-	import SocialNetworkIcon from "../atoms/SocialNetworkIcon.vue"
+	import socialNetworkIcon from "../atoms/SocialNetworkIcon.vue"
 	export default {
 		name: "socialNetwokrs",
 		components: {
-			SocialNetworkIcon
+			socialNetworkIcon
 		},
 		data() {
 			return {

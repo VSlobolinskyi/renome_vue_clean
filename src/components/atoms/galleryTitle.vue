@@ -1,14 +1,16 @@
 <template>
-	<h2 class="gallery__title">{{text}}</h2>
+	<h2 class="gallery__title">{{title.innerText}}</h2>
 </template>
 
 <script>
-	import json from "../../../data/structure.json"
 	export default {
 		name: "galleryTilte",
 		data() {
 			return {
-				text: json.gallery.title
+				title: {
+					id: 1,
+					innerText: "gallery"
+				}
 			}
 		}
 	}
