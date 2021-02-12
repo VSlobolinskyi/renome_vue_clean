@@ -8,10 +8,10 @@
 	}
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
 	.icons__stick {
 		display: inline;
-		background-color: var(--black);
+		background-color: $black;
 		margin: 0 3px;
 		width: 1px;
 		height: 15px;

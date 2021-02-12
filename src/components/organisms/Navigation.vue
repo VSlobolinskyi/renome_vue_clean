@@ -17,7 +17,7 @@
 	}
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
 	.navigation {
 		position: fixed;
 		display: flex;
@@ -26,7 +26,7 @@
 		height: 45px;
 		top: 0;
 		padding: 0 0 10px;
-		background-color: var(--white);
+		background-color: $white;
 		z-index: 2;
 	}
 </style>

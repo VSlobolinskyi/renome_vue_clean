@@ -20,7 +20,7 @@ export default {
 }
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
 	.about {
 		display: flex;
 		box-sizing: border-box;

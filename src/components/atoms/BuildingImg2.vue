@@ -17,7 +17,7 @@ export default {
 }
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
 	.building__img2 {
 		position: relative;
 		width: 81%;

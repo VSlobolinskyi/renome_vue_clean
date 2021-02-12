@@ -8,7 +8,7 @@
 	}
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
 	.tail__copyright {
 		text-align: center;
 		text-transform: uppercase;
@@ -16,7 +16,7 @@
 		padding: 0 0 10px;
 		font-size: 12px;
 		letter-spacing: 1px;
-		color: var(--darkBlue);
+		color: $darkBlue;
 		font-family: "Axis", "Ariel", "Times New Roman", "Times";
 		cursor: default;
 	}

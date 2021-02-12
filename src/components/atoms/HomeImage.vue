@@ -9,7 +9,7 @@
 	}
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
 	.home__img {
 		position: relative;
 		width: 100%;

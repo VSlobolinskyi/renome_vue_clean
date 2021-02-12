@@ -11,16 +11,16 @@
 	}
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
 	.home__arrow-outline {
 		position: relative;
 		display: flex;
 		align-content: center;
 		justify-content: space-around;
-		border: 2px solid var(--white);
+		border: 2px solid $white;
 		width: 55px;
 		height: 55px;
-		color: var(--white);
+		color: $white;
 		cursor: pointer;
 		-webkit-tap-highlight-color: transparent;
 	}

@@ -8,10 +8,10 @@
 	}
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
 	.home__img-shader {
 		position: absolute;
-		background-color: var(--darkBlue);
+		background-color: $darkBlue;
 		width: 100%;
 		height: 100%;
 		opacity: 0.12;

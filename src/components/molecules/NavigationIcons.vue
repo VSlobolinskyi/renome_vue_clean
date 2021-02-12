@@ -26,7 +26,7 @@
 	}
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
 	.icons {
 		position: relative;
 		display: flex;

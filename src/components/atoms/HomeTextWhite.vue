@@ -9,9 +9,9 @@
 	}
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
 	.home__text-white {
-		color: var(--white);
+		color: $white;
 		margin: 0 0 5px;
 		font-size: 28px;
 		letter-spacing: 3px;

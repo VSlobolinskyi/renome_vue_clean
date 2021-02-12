@@ -28,3 +28,7 @@
 		}
 	}
 </script>
+
+<style type="scss">
+	@import "./styles/globalStyles.scss";
+</style>

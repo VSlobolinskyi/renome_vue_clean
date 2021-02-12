@@ -14,7 +14,7 @@
 	}
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
 	.icons__cart {
 		display: inline-block;
 		position: relative;

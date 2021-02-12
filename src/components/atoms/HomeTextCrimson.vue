@@ -9,9 +9,9 @@
 	}
 </script>
 
-<style scoped>
+<style  lang="scss" scoped>
 	.home__text-crimson {
-		color: var(--crimson);
+		color: $crimson;
 		margin: 0 0 30px;
 		font-size: 22px;
 		letter-spacing: 2px;

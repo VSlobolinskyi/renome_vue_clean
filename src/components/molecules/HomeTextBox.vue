@@ -18,7 +18,7 @@
 	}
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
 	.home__text-box {
 		position: absolute;
 		width: 100%;

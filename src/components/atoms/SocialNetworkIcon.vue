@@ -11,7 +11,7 @@
 	}
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
 	.social-networks__icon {
 		width: 33px;
 		height: 33px;

@@ -8,7 +8,7 @@
 	}
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
 	.tail__follow-us {
 		align-self: center;
 		text-transform: uppercase;
@@ -16,7 +16,7 @@
 		padding: 15px 0;
 		font-size: 12px;
 		line-height: 25px;
-		color: var(--darkBlue);
+		color: $darkBlue;
 		font-family: "Montserrat", "Ariel", "Times New Roman", "Times";
 		text-align: right;
 		cursor: default;

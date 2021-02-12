@@ -6,9 +6,6 @@ module.exports = {
 	entry: {
 		main: "./src/main.js"
 	},
-	output: {
-
-	},
 	module: {
 		rules: [
 			{
@@ -23,10 +20,20 @@ module.exports = {
 				loader: 'vue-loader'
 			},
 			{
-				test: /\.css$/,
+				test: /\.s?css$/,
 				use: [
 					'style-loader',
-					'css-loader'
+					'css-loader',
+					{
+						loader: 'sass-loader',
+						options: {
+							additionalData: `@import "/src/styles/globalStyles.scss";`,
+							sassOptions: {
+								data: '@import "/src/styles/globalStyles.scss";',
+								webpackSucks: "true"
+							}
+						}
+					}
 				]
 			},
 			{

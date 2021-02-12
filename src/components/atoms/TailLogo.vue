@@ -8,12 +8,12 @@
 	}
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
 	.tail__logo {
 		align-self: center;
 		font-size: 20px;
 		letter-spacing: 2px;
-		color: var(--darkBlue);
+		color: $darkBlue;
 		font-family: "Pacifico", "Ariel", "Times New Roman", "Times";
 		cursor: default;
 	}

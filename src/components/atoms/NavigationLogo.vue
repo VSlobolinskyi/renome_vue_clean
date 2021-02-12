@@ -14,13 +14,13 @@
 	}
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
 	.navigation__logo {
 		font-size: 25px;
 		letter-spacing: 3px;
 		padding: 0 0 0 10px;
 		margin: 0;
-		color: var(--black);
+		color: $black;
 		font-family: "Pacifico";
 		cursor: default;
 	}

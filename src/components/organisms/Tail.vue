@@ -23,13 +23,13 @@
 	}
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
 	.tail {
 		position: relative;
 		display: flex;
 		box-sizing: border-box;
 		flex-direction: column;
-		background-color: var(--gray);
+		background-color: $gray;
 		padding: 20px 10px;
 		width: 100vw;
 	}

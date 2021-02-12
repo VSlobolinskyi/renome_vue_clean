@@ -9,7 +9,7 @@
 	}
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
 	.gallery__img {
 		display: block;
 		box-sizing: border-box;

@@ -14,9 +14,9 @@
 	}
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
 	.gallery__slogan {
-		color: var(--crimson);
+		color: $crimson;
 		text-align: center;
 		text-transform: uppercase;
 		margin: 0;

@@ -14,14 +14,14 @@
 	}
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
 	.about__text {
 		margin: 0;
 		padding: 0;
 		font-size: 12px;
 		letter-spacing: 2px;
 		line-height: 30px;
-		color: var(--darkBlue);
+		color: $darkBlue;
 		font-family: "Montserrat", "Ariel", "Times New Roman", "Times";
 		cursor: default;
 	}

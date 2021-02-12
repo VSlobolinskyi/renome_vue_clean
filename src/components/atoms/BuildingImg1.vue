@@ -17,7 +17,7 @@ export default {
 }
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
 	.building__img1 {
 		width: 81%;
 		padding: 0 0 0 16%;

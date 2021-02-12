@@ -15,7 +15,7 @@
 	}
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
 	.gallery__row {
 		display: block;
 		box-sizing: border-box;

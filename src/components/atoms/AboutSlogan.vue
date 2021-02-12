@@ -14,10 +14,10 @@
 	}
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
 	.about__slogan {
 		text-transform: uppercase;
-		color: var(--crimson);
+		color: $crimson;
 		padding: 10px 0 10px;
 		margin: 0;
 		font-size: 11px;

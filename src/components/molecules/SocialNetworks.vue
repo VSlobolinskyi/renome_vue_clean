@@ -38,7 +38,7 @@
 	}
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
 	.social-networks {
 		display: flex;
 		align-self: center;

@@ -16,7 +16,7 @@
 	}
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
 	.icons__cross {
 		display: inline-block;
 		position: relative;
@@ -24,8 +24,9 @@
 		padding: 0 0 0 3px;
 		cursor: pointer;
 		-webkit-tap-highlight-color: transparent;
-	}
-	.icons--hidden {
-		display: none
+
+		&--hidden {
+			display: none;
+		}
 	}
 </style>

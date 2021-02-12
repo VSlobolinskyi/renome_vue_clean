@@ -26,12 +26,12 @@
 	}
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
 	.gallery {
 		display: flex;
 		flex-direction: column;
 		width: 100vw;
-		background-color: var(--lightGray);
+		background-color: $lightGray;
 		padding: 70px 0;
 	}
 </style>

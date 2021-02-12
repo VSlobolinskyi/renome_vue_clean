@@ -17,7 +17,7 @@
 	}
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
 	.icons__hamburger-button {
 		display: inline-block;
 		position: relative;
@@ -26,8 +26,9 @@
 		height: 15px;
 		cursor: pointer;
 		-webkit-tap-highlight-color: transparent;
-	}
-	.icons--hidden {
-		display: none
+
+		&--hidden {
+			display: none
+		}
 	}
 </style>

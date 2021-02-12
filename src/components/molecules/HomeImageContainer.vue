@@ -21,7 +21,7 @@
 	}
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
 	.home__img-container {
 		position: absolute;
 		visibility: visible;
@@ -30,11 +30,13 @@
 		height: 140vw;
 		width: 100vw;
 		transition: left 0.4s;
+
+		&--hidden{
+			left: 100vw;
+		}
+		
+		&--top{
+			z-index: 1;
+		}
 	}	
-	.home__img-container--hidden {
-		left: 100vw;
-	}
-	.home__img-container--top {
-		z-index: 1;
-	}
 </style>
