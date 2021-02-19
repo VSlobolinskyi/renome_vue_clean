@@ -28,10 +28,6 @@ module.exports = {
 						loader: 'sass-loader',
 						options: {
 							additionalData: `@import "/src/styles/globalStyles.scss";`,
-							sassOptions: {
-								data: '@import "/src/styles/globalStyles.scss";',
-								webpackSucks: "true"
-							}
 						}
 					}
 				]

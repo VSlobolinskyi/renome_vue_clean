@@ -1,26 +1,28 @@
 <template>
 	<div class="gallery">
-		<GalleryTitle/>
-		<GallerySlogan/>
-		<GalleryRow v-bind:row="row" v-bind:key="row.rowId" v-for="row in rows" />
+		<div class="gallery__title-formating">
+			<Title :title="gallery.title"/>
+			<SubTitle :subTitle="gallery.subTitle"/>
+		</div>
+		<GalleryRow v-bind:row="row" v-bind:key="row.rowId" v-for="row in gallery.galleryRows" />
 	</div>
 </template>
 
 <script>
-	import GalleryTitle from "../atoms/GalleryTitle.vue"
-	import GallerySlogan from  "../atoms/GallerySlogan.vue"
+	import Title from "../atoms/Title.vue"
+	import SubTitle from  "../atoms/SubTitle.vue"
 	import GalleryRow from "../molecules/GalleryRow.vue"
-	import json from "../../../data/structure.json"
+	import json from "/data/structure.json"
 	export default {
 		name: "gallery",
 		components: {
-			GalleryTitle,
-			GallerySlogan,
+			Title,
+			SubTitle,
 			GalleryRow
 		},
 		data() {
 			return {
-				rows: json.gallery.galleryRows
+				gallery: json.gallery
 			}
 		}
 	}
@@ -33,5 +35,10 @@
 		width: 100vw;
 		background-color: $lightGray;
 		padding: 70px 0;
+
+		&__title-formating {
+			text-align: center;
+			padding: 0 0 15px 0;
+		}
 	}
 </style>

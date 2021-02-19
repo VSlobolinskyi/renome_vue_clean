@@ -1,19 +1,19 @@
 <template>
-	<div class="home">
-		<HomeImageContainer v-bind:imageContainer="imageContainer" v-bind:key="imageContainer.id" v-for="imageContainer in imageContainers"/>
-		<HomeArrowContainer v-on:traverse="switchImage" v-bind:arrows="arrowContainer"/>
+	<div class="carousel">
+		<CarouselElement v-bind:imageContainer="imageContainer" v-bind:key="imageContainer.id" v-for="imageContainer in imageContainers"/>
+		<CarouselNavigation v-on:traverse="switchImage" v-bind:arrows="arrowContainer"/>
 	</div>
 </template>
 
 <script>
-	import HomeArrowContainer from "../molecules/HomeArrowContainer.vue"
-	import HomeImageContainer from "../molecules/HomeImageContainer.vue"
+	import CarouselNavigation from "../molecules/CarouselNavigation.vue"
+	import CarouselElement from "../molecules/CarouselElement.vue"
 	import json from "../../../data/structure.json"
 	export default {
-		name: "home",
+		name: "Carousel",
 		components: {
-			HomeArrowContainer,
-			HomeImageContainer
+			CarouselNavigation,
+			CarouselElement
 		},
 		methods: {
 			switchImage(direction) {
@@ -60,7 +60,7 @@
 </script>
 
 <style lang="scss" scoped>
-	.home {
+	.carousel {
 		position: relative;
 		margin: 60px 0 70px;
 		height: 140vw;

@@ -1,11 +1,11 @@
 <template>
   <div id="app">
 		<Navigation/>
-		<Home/>
+		<Carousel/>
     <Building/>
 		<About/>
 		<Gallery/>
-		<Tail/>
+		<Footer/>
   </div>
 </template>
 
@@ -13,22 +13,22 @@
 	import Building from "./components/molecules/Building.vue"
 	import About from "./components/molecules/About.vue"
 	import Gallery from "./components/organisms/Gallery.vue"
-	import Tail from "./components/organisms/Tail.vue"
+	import Footer from "./components/organisms/Footer.vue"
 	import Navigation from "./components/organisms/Navigation.vue"
-	import Home from "./components/organisms/Home.vue"
+	import Carousel from "./components/organisms/Carousel.vue"
 	export default {
 		name: "app",
 		components: {
 			Building,
 			About,
 			Gallery,
-			Tail,
+			Footer,
 			Navigation,
-			Home
+			Carousel
 		}
-	}
+	}	
 </script>
 
-<style type="scss">
+<style lang="scss">
 	@import "./styles/globalStyles.scss";
 </style>

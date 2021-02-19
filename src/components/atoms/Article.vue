@@ -1,21 +1,18 @@
 <template>
-	<p class="about__text">{{about.text}}</p>
+  <div>
+		<p class="article">{{text}}</p>
+  </div>
 </template>
 
 <script>
-	import json from "../../../data/structure.json"
 	export default {
-		name: "aboutText",
-		data() {
-			return {
-				about: json.about
-			}
-		}
+		name: "Aricle",
+    props: ["text"]
 	}
 </script>
 
-<style lang="scss" scoped>
-	.about__text {
+<style lang="scss">
+	.article {
 		margin: 0;
 		padding: 0;
 		font-size: 12px;

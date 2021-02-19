@@ -31,51 +31,91 @@
         "id": 1,
         "isHidden": 0,
         "isTop": 1,
-        "img": {
+        "image": {
           "src": "carousel_img_1.png",
           "alt": "Delecious omlette"
         },
         "textBox": {
-          "title": "made with love 1",
-          "subTitle": "for you 1"
+          "title": {
+            "innerText": "made with love 1",
+            "white": 1
+          },
+          "subTitle": {
+            "innerText": "for you 1",
+            "uppercase": 0
+          }
         }
       },
       {
         "id": 2,
         "isHidden": 1,
         "isTop": 1,
-        "img": {
+        "image": {
           "src": "carousel_img_2.png",
           "alt": "Captivating desert"
         },
         "textBox": {
-          "title": "made with love 2",
-          "subTitle": "for you 2"
+          "title": {
+            "innerText": "made with love 2",
+            "white": 1
+          },
+          "subTitle": {
+            "innerText": "for you 2",
+            "uppercase": 0
+          }
         }
       },
       {
         "id": 3,
         "isHidden": 1,
         "isTop": 1,
-        "img": {
+        "image": {
           "src": "carousel_img_3.png",
           "alt": "Fragrant spices"
         },
         "textBox": {
-          "title": "made with love 3",
-          "subTitle": "for you 3"
+          "title": {
+            "innerText": "made with love 3",
+            "white": 1
+          },
+          "subTitle": {
+            "innerText": "for you 3",
+            "uppercase": 0
+          }
         }
       }
     ]
-  },  
+  },
+  "building": {
+    "images":[
+      {
+        "src": "about_img_2.png",
+        "alt": "Restorant full building view"
+      },
+      {
+        "src": "about_img_1.png",
+        "alt": "Restorant enterance door view"
+      }
+    ]
+  },
   "about": {
-    "title": "about",
-    "subTitle": "we create delicious memories",
+    "title":{
+      "innerText": "about"
+    },
+    "subTitle": {
+      "innerText": "we create delicious memories",
+      "uppercase": 1
+    },
     "text": "Renome it is renowned restaurant delights the senses with elegant ambiance, gracious service and delectable menus in the heart of Manhattan’s. The distinctive setting boasts contemporary furnishings and finishes atop the restaurant’s grand modern architecture. Renome offers the room for private dining where guests enjoy creative foods and sumptuous late night desserts. Is one of the few Manhattan restaurants to have a coveted 3-star Michelin rating."
   },
   "gallery": {
-    "title": "Gallery",
-    "subTitle": "More about us via photos",
+    "title":{
+      "innerText": "gallery"
+    },
+    "subTitle": {
+      "innerText": "more about us via photos",
+      "uppercase": 1
+    },
     "galleryRows": [
       {
         "rowId": 1,

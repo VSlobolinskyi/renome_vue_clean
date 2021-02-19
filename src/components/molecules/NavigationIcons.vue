@@ -1,27 +1,19 @@
 <template>
 	<div class="icons">
 		<Cart/>
-		<CartStatus/>
-		<Stick/>
-		<HamburgerButton/>
-		<Corss/>
+		<div class="icons__divider"></div>
+		<MenuIcon/>
 	</div>	
 </template>
 
 <script>
 	import Cart from "../atoms/Cart.vue"
-	import Stick from "../atoms/Stick.vue"
-	import Corss from "../atoms/Cross.vue"
-	import HamburgerButton from "../atoms/HamburgerButton.vue"
-	import CartStatus from "../atoms/CartStatus.vue"
+	import MenuIcon from "../atoms/MenuIcon.vue"
 	export default {
 		name: "navigationIcons",
 		components: {
 			Cart,
-			CartStatus,
-			Stick,
-			HamburgerButton,
-			Corss
+			MenuIcon
 		}
 	}
 </script>
@@ -32,5 +24,13 @@
 		display: flex;
 		align-items: center;
 		padding: 5px 10px 0 0;
+
+		&__divider {
+			display: inline;
+			background-color: $black;
+			margin: 0 3px;
+			width: 1px;
+			height: 15px;
+		}
 	}
 </style>
