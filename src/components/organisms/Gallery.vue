@@ -4,7 +4,7 @@
 			<Title :title="gallery.title"/>
 			<SubTitle :subTitle="gallery.subTitle"/>
 		</div>
-		<GalleryRow v-bind:row="row" v-bind:key="row.rowId" v-for="row in gallery.galleryRows" />
+		<GalleryRow v-bind:row="row" :key="row.rowId" v-for="row in gallery.galleryRows" />
 	</div>
 </template>
 
@@ -14,7 +14,7 @@
 	import GalleryRow from "../molecules/GalleryRow.vue"
 	import json from "/data/structure.json"
 	export default {
-		name: "gallery",
+		name: "Gallery",
 		components: {
 			Title,
 			SubTitle,

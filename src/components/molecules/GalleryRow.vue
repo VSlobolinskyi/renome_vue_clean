@@ -1,13 +1,13 @@
 <template>
 	<div class="gallery__row">
-		<GalleryImage v-bind:img="img" v-bind:key="img.imgId" v-for="img in row.images"/>
+		<GalleryImage :img="img" :key="img.imgId" v-for="img in row.images"/>
 	</div>
 </template>
 
 <script>
 	import GalleryImage from "../atoms/GalleryImage.vue"
 	export default {
-		name: "galleryRow",
+		name: "GalleryRow",
 		props: ["row"],
 		components: {
 			GalleryImage	

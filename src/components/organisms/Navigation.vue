@@ -9,7 +9,7 @@
 	import NavigationLogo from "../atoms/NavigationLogo.vue"
 	import NavigationIcons from "../molecules/NavigationIcons.vue"
 	export default {
-		name: "navigation",
+		name: "Navigation",
 		components: {
 			NavigationLogo,
 			NavigationIcons

@@ -1,7 +1,7 @@
 <template>
 	<div class="text-box">
-		<Title v-bind:title="textBox.title"/>
-		<SubTitle v-bind:subTitle="textBox.subTitle"/>
+		<Title :title="textBox.title"/>
+		<SubTitle :subTitle="textBox.subTitle"/>
 	</div>
 </template>
 
@@ -9,7 +9,7 @@
 	import Title from "../atoms/Title.vue"
 	import SubTitle from "../atoms/SubTitle.vue"
 	export default {
-		name: "homeTextBox",
+		name: "HomeTextBox",
 		props: ["textBox"],
 		components: {
 			Title,

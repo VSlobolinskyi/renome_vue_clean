@@ -4,7 +4,7 @@
 
 <script>
 	export default {
-		name: "tailLogo"
+		name: "TailLogo"
 	}
 </script>
 

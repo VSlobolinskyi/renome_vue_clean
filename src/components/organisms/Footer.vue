@@ -13,7 +13,7 @@
 	import FollowUs from "../atoms/FollowUs.vue"
 	import SocialNetworks from "../molecules/SocialNetworks.vue"
 	export default {
-		name: "tail",
+		name: "Tail",
 		components: {
 			TailLogo,
 			Copyright,

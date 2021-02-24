@@ -1,10 +1,10 @@
 <template>
-	 <img v-bind:src="require(`../../assets/images/${img.src}`)" v-bind:alt="img.alt" class="gallery__img" >
+	 <img :src="require(`../../assets/images/${img.src}`)" :alt="img.alt" class="gallery__img" >
 </template>
 
 <script>
 	export default {
-		name: "galleryImage",
+		name: "GalleryImage",
 		props: ["img"]
 	}
 </script>

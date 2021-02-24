@@ -1,15 +1,15 @@
 <template>
-	<p class="tail__copyright">copyright 2015 renome by estetique</p>
+	<p class="copyright">copyright 2015 renome by estetique</p>
 </template>
 
 <script>
 	export default {
-		name: "copyright"
+		name: "Copyright"
 	}
 </script>
 
 <style lang="scss" scoped>
-	.tail__copyright {
+	.copyright {
 		text-align: center;
 		text-transform: uppercase;
 		margin: 0;

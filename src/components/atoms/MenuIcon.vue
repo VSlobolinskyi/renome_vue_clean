@@ -1,14 +1,13 @@
 <template>
-	<img v-bind:alt="hamburgerButton.alt" v-bind:src="hamburgerButton.src" class="icons__hamburger-button">
+	<img :alt="hamburgerButton.alt" :src="hamburgerButton.src" class="icons__hamburger-button">
 </template>
 
 <script>
 	export default {
-		name: "hamburgerButton",
+		name: "HamburgerButton",
 		data () {
 			return {
 				hamburgerButton: {
-					id: 1,
 					alt: "Hamburger button",
 					src: require("../../assets/icons/hamburger_button.svg")
 				}

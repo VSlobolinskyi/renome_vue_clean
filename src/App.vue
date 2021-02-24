@@ -17,7 +17,7 @@
 	import Navigation from "./components/organisms/Navigation.vue"
 	import Carousel from "./components/organisms/Carousel.vue"
 	export default {
-		name: "app",
+		name: "App",
 		components: {
 			Building,
 			About,

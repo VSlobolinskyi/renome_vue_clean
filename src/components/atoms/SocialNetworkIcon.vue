@@ -1,12 +1,12 @@
 <template>
-	<a v-bind:href="icon.href">
-		<img v-bind:src="icon.src" v-bind:alt="icon.alt" class="social-networks__icon">
+	<a :href="icon.href">
+		<img :src="icon.src" :alt="icon.alt" class="social-networks__icon">
 	</a>
 </template>
 
 <script>
 	export default {
-		name: "socilNetwrkIcon",
+		name: "SocilNetwrkIcon",
 		props: ["icon"]
 	}
 </script>

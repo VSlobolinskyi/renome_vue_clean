@@ -10,7 +10,7 @@
 	import Cart from "../atoms/Cart.vue"
 	import MenuIcon from "../atoms/MenuIcon.vue"
 	export default {
-		name: "navigationIcons",
+		name: "NavigationIcons",
 		components: {
 			Cart,
 			MenuIcon

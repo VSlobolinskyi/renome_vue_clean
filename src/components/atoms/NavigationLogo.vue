@@ -3,9 +3,9 @@
 </template>
 
 <script>
-	import json from "../../../data/structure.json"
+	import json from "/data/structure.json"
 	export default {
-		name: "navigationLogo",
+		name: "NavigationLogo",
 		data() {
 			return {
 				text: json.navigation.logo

@@ -1,14 +1,14 @@
 <template>
 	<div class="carousel">
-		<CarouselElement v-bind:imageContainer="imageContainer" v-bind:key="imageContainer.id" v-for="imageContainer in imageContainers"/>
-		<CarouselNavigation v-on:traverse="switchImage" v-bind:arrows="arrowContainer"/>
+		<CarouselElement :imageContainer="imageContainer" :key="imageContainer.id" v-for="imageContainer in imageContainers"/>
+		<CarouselNavigation v-on:traverse="switchImage" :arrows="arrowContainer"/>
 	</div>
 </template>
 
 <script>
 	import CarouselNavigation from "../molecules/CarouselNavigation.vue"
 	import CarouselElement from "../molecules/CarouselElement.vue"
-	import json from "../../../data/structure.json"
+	import json from "/data/structure.json"
 	export default {
 		name: "Carousel",
 		components: {

@@ -1,7 +1,7 @@
 <template>
-	<div v-bind:class="{'carousel-element--top': imageContainer.isTop, 'carousel-element--hidden': imageContainer.isHidden}" class="carousel-element">
+	<div :class="{'carousel-element--top': imageContainer.isTop, 'carousel-element--hidden': imageContainer.isHidden}" class="carousel-element">
 		<div class="carousel-element__shader"></div>
-		<img v-bind:src="require(`../../assets/images/${imageContainer.image.src}`)" v-bind:alt="imageContainer.image.alt" class="carousel-element__image"> 
+		<img :src="require(`../../assets/images/${imageContainer.image.src}`)" :alt="imageContainer.image.alt" class="carousel-element__image"> 
 		<TextBox :textBox="imageContainer.textBox"/>
 	</div>
 </template>

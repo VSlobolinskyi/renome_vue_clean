@@ -1,15 +1,15 @@
 <template>
-	<p class="tail__follow-us">follow us:</p>
+	<p class="follow-us">follow us:</p>
 </template>
 
 <script>
 	export default {
-		name: "followUs"
+		name: "FollowUs"
 	}
 </script>
 
 <style lang="scss" scoped>
-	.tail__follow-us {
+	.follow-us {
 		align-self: center;
 		text-transform: uppercase;
 		margin: 0;

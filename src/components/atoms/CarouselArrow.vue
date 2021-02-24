@@ -1,6 +1,6 @@
 <template>
-	<div v-on:click="$emit('traverse', arrow.direction)" class="home__arrow-outline">
-		<img v-bind:src="require(`../../assets/icons/${arrow.src}`)" v-bind:alt="arrow.alt" class="home__arrow">
+	<div v-on:click="$emit('traverse', arrow.direction)" class="arrow">
+		<img :src="require(`../../assets/icons/${arrow.src}`)" :alt="arrow.alt" class="arrow__icon">
 	</div>
 </template>
 
@@ -12,7 +12,7 @@
 </script>
 
 <style lang="scss" scoped>
-	.home__arrow-outline {
+	.arrow {
 		position: relative;
 		display: flex;
 		align-content: center;
@@ -23,10 +23,12 @@
 		color: $white;
 		cursor: pointer;
 		-webkit-tap-highlight-color: transparent;
+
+		&__icon {
+			width: 24px;
+			height: 40px;
+			align-self: center;
+		}
 	}
-	.home__arrow {
-		width: 24px;
-		height: 40px;
-		align-self: center;
-	}
+	
 </style>

@@ -1,14 +1,14 @@
 <template>
 	<div>
-		<img v-bind:alt="cart.alt" v-bind:src="require(`../../assets/icons/${cart.src}`)" class="icons__cart">
-		<p class="icons__cart-status">{{cartStatus.innerText}}</p>
+		<img :alt="cart.alt" :src="require(`../../assets/icons/${cart.src}`)" class="cart">
+		<p class="cart-status">{{cartStatus.innerText}}</p>
 	</div>
 </template>
 
 <script>
 	import json from "../../../data/structure.json"
 	export default {
-		name: "cart",
+		name: "Cart",
 		data() {
 			return {
 				cart: json.navigation.navigationIcons.cart,
@@ -22,7 +22,7 @@
 </script>
 
 <style lang="scss" scoped>
-	.icons__cart {
+	.cart {
 		display: inline-block;
 		position: relative;
 		padding: 0 3px;
@@ -33,7 +33,7 @@
 		-webkit-tap-highlight-color: transparent;
 	}
 
-	.icons__cart-status {
+	.cart-status {
 		display: inline-block;
 		position: relative;
 		padding: 0 3px;
