@@ -1,5 +1,5 @@
 <template>
-	<p class="tail__logo">Renome</p>
+	<p class="tail__logo"></p>
 </template>
 
 <script>
@@ -9,11 +9,10 @@
 </script>
 
 <style lang="scss" scoped>
-	.tail__logo {
+	.logo {
 		align-self: center;
 		font-size: 20px;
 		letter-spacing: 2px;
-		color: $darkBlue;
 		font-family: "Pacifico", "Ariel", "Times New Roman", "Times";
 		cursor: default;
 	}

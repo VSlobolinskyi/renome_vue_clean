@@ -1,8 +1,8 @@
 <template>
 	<div class="icons">
-		<Cart/>
+		<Cart :cart="icons.cart"/>
 		<div class="icons__divider"></div>
-		<MenuIcon/>
+		<MenuIcon :menuIcon="icons.menuIcon"/>
 	</div>	
 </template>
 
@@ -14,6 +14,10 @@
 		components: {
 			Cart,
 			MenuIcon
+		},
+		props: ["icons"],
+		props: {
+			icons: Object
 		}
 	}
 </script>

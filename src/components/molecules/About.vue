@@ -10,7 +10,6 @@
 import Title from "../atoms/Title.vue"
 import SubTitle from "../atoms/SubTitle.vue"
 import Article from "../atoms/Article.vue"
-import json from "/data/structure.json"
 
 export default {
 	name: "about",
@@ -19,10 +18,9 @@ export default {
 		SubTitle,
 		Article
 	},
-	data() {
-		return {
-			about: json.about
-		}
+	props: ["about"],
+	props: {
+		about: Object
 	}
 }
 </script>

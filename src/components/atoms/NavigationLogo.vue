@@ -1,15 +1,13 @@
 <template>
-	<p class="navigation__logo">{{text}}</p>
+	<p class="navigation__logo">{{logo}}</p>
 </template>
 
 <script>
-	import json from "/data/structure.json"
 	export default {
 		name: "NavigationLogo",
-		data() {
-			return {
-				text: json.navigation.logo
-			}
+		props: ["logo"],
+		props: {
+			logo: String
 		}
 	}
 </script>

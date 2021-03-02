@@ -15,7 +15,7 @@
 	.article {
 		margin: 0;
 		padding: 0;
-		font-size: 12px;
+		font-size: rem(12px);
 		letter-spacing: 2px;
 		line-height: 30px;
 		color: $darkBlue;

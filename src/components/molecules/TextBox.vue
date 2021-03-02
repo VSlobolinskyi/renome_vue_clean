@@ -11,6 +11,9 @@
 	export default {
 		name: "HomeTextBox",
 		props: ["textBox"],
+		props: {
+			textBox: Object
+		},
 		components: {
 			Title,
 			SubTitle

@@ -1,13 +1,16 @@
 <template>
 	<a :href="icon.href">
-		<img :src="icon.src" :alt="icon.alt" class="social-networks__icon">
+		<img :src="require(`/src/assets/icons/${icon.src}`)" :alt="icon.alt" class="social-networks__icon">
 	</a>
 </template>
 
 <script>
 	export default {
 		name: "SocilNetwrkIcon",
-		props: ["icon"]
+		props: ["icon"],
+		props: {
+			icon: Object
+		}
 	}
 </script>
 

@@ -1,7 +1,7 @@
 <template>
 	<div class="navigation">
-		<NavigationLogo/>
-		<NavigationIcons/>
+		<NavigationLogo :logo="navigation.logo"/>
+		<NavigationIcons :icons="navigation.icons"/>
 	</div>	
 </template>
 
@@ -13,6 +13,10 @@
 		components: {
 			NavigationLogo,
 			NavigationIcons
+		},
+		props: ["navigation"],
+		props: {
+			navigation: Object
 		}
 	}
 </script>

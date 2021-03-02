@@ -1,6 +1,6 @@
 <template>
 	<div class="social-networks">
-		<SocialNetworkIcon :icon="icon" :key="icon.id" v-for="icon in icons" />
+		<SocialNetworkIcon :icon="icon" :key="index" v-for="(icon, index) in icons" />
 	</div>
 </template>
 
@@ -11,29 +11,9 @@
 		components: {
 			SocialNetworkIcon
 		},
-		data() {
-			return {
-				icons: [
-					{
-						id: 1,
-						src: require("../../assets/icons/facebook_icon.svg"),
-						alt: "Facebook icon",
-						href: "#"
-					},
-					{
-						id: 2,
-						src: require("../../assets/icons/twitter_icon.svg"),
-						alt: "Twitter icon",
-						href: "#"
-					},
-					{
-						id: 3,
-						src: require("../../assets/icons/google_plus_icon.svg"),
-						alt: "Google plus icon",
-						href: "#"
-					}
-				]
-			}
+		props: ["icons"],
+		props: {
+			icons: Array
 		}
 	}
 </script>

@@ -1,6 +1,6 @@
 <template>
 	<div class="arrow-container">
-		<CarouselArrow v-on:traverse="$emit('traverse', arrow.direction)" :arrow="arrow" :key="arrow.id" v-for="arrow in arrows"/>
+		<CarouselArrow v-on:traverse="$emit('traverse', arrow.direction)" :arrow="arrow" :key="index" v-for="(arrow, index) in arrows"/>
 	</div>
 </template>
 

@@ -24,7 +24,7 @@
 			text-transform: uppercase;
 			padding: 10px 0 10px;
 			margin: 0;
-			font-size: 11px;
+			font-size: rem(11px);
 			letter-spacing: 1px;
 		}
 	}

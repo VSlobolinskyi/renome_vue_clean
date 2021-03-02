@@ -1,22 +1,16 @@
 <template>
 	<div>
 		<img :alt="cart.alt" :src="require(`../../assets/icons/${cart.src}`)" class="cart">
-		<p class="cart-status">{{cartStatus.innerText}}</p>
+		<p class="cart-status">{{cart.cartStatus}}</p>
 	</div>
 </template>
 
 <script>
-	import json from "../../../data/structure.json"
 	export default {
 		name: "Cart",
-		data() {
-			return {
-				cart: json.navigation.navigationIcons.cart,
-				cartStatus: {
-					id: 1,
-					innerText: "5"
-				}
-			}
+		porps: ["cart"],
+		props: {
+			cart: Object
 		}
 	}
 </script>

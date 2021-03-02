@@ -24,7 +24,7 @@
 		&--white {
 			color: $white;
 			margin: 0 0 5px;
-			font-size: 2rem;
+			font-size: 28px;
 			letter-spacing: 3px;
 		}
 	}

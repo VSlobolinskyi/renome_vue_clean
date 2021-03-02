@@ -4,26 +4,24 @@
 			<Title :title="gallery.title"/>
 			<SubTitle :subTitle="gallery.subTitle"/>
 		</div>
-		<GalleryRow v-bind:row="row" :key="row.rowId" v-for="row in gallery.galleryRows" />
+		<GalleryGrid :images="gallery.galleryImages"/>
 	</div>
 </template>
 
 <script>
 	import Title from "../atoms/Title.vue"
 	import SubTitle from  "../atoms/SubTitle.vue"
-	import GalleryRow from "../molecules/GalleryRow.vue"
-	import json from "/data/structure.json"
+	import GalleryGrid from "../molecules/GalleryGrid.vue"
 	export default {
 		name: "Gallery",
 		components: {
 			Title,
 			SubTitle,
-			GalleryRow
+			GalleryGrid
 		},
-		data() {
-			return {
-				gallery: json.gallery
-			}
+		props: ["gallery"],
+		props: {
+			gallery: Object
 		}
 	}
 </script>

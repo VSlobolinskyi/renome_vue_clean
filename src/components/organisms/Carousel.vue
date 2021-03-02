@@ -1,59 +1,57 @@
 <template>
 	<div class="carousel">
-		<CarouselElement :imageContainer="imageContainer" :key="imageContainer.id" v-for="imageContainer in imageContainers"/>
-		<CarouselNavigation v-on:traverse="switchImage" :arrows="arrowContainer"/>
+		<CarouselElement :imageContainer="imageContainer" :key="index"  v-for="(imageContainer, index) in carousel.imageContainers"/>
+		<CarouselNavigation v-on:traverse="switchImage" :arrows="carousel.arrowContainer"/>
 	</div>
 </template>
 
 <script>
 	import CarouselNavigation from "../molecules/CarouselNavigation.vue"
 	import CarouselElement from "../molecules/CarouselElement.vue"
-	import json from "/data/structure.json"
 	export default {
 		name: "Carousel",
 		components: {
 			CarouselNavigation,
 			CarouselElement
 		},
+		props: ["carousel"],
+		props: {
+			carousel: Object
+		},
 		methods: {
 			switchImage(direction) {
-				const imagesInCarousel = this.imageContainers.length;
+				const imagesInCarousel = this.carousel.imageContainers.length;
+				let imageContainers = this.carousel.imageContainers
 				let active = 0;
 				for (; active < imagesInCarousel-1 ; active++) {
-					if (!this.imageContainers[active].isHidden){
+					if (!imageContainers[active].isHidden){
 						break;
 					}
 				}
 				if (direction == 'left'){
-					this.imageContainers[active].isTop = 1;
-					this.imageContainers[active].isHidden = 1;
+					imageContainers[active].isTop = 1;
+					imageContainers[active].isHidden = 1;
 					if(active == 0){
 						active = imagesInCarousel-1;
 					}
 					else {
 						active--;
 					}
-					this.imageContainers[active].isTop = 0;
-					this.imageContainers[active].isHidden = 0;
+					imageContainers[active].isTop = 0;
+					imageContainers[active].isHidden = 0;
 				}
 				if (direction == 'right') {
-					this.imageContainers[active].isTop = 0;
-					this.imageContainers[active].isHidden = 1;
+					imageContainers[active].isTop = 0;
+					imageContainers[active].isHidden = 1;
 					if(active == imagesInCarousel-1){
 						active = 0;
 					}
 					else {
 						active++;
 					}
-					this.imageContainers[active].isTop = 1;
-					this.imageContainers[active].isHidden = 0;
+					imageContainers[active].isTop = 1;
+					imageContainers[active].isHidden = 0;
 				}
-			}
-		},
-		data() {
-			return {
-					arrowContainer: json.carousel.arrowContainer,
-					imageContainers: json.carousel.imageContainers
 			}
 		}
 	}

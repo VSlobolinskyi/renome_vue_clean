@@ -1,23 +1,19 @@
 <template>
-	<img :alt="hamburgerButton.alt" :src="hamburgerButton.src" class="icons__hamburger-button">
+	<img :alt="menuIcon.hamburgerButton.alt" :src="require(`/src/assets/icons/${menuIcon.hamburgerButton.src}`)" class="menu-icon">
 </template>
 
 <script>
 	export default {
 		name: "HamburgerButton",
-		data () {
-			return {
-				hamburgerButton: {
-					alt: "Hamburger button",
-					src: require("../../assets/icons/hamburger_button.svg")
-				}
-			}
+		porps: ["menuIcon"],
+		props: {
+			menuIcon: Object
 		}
 	}
 </script>
 
 <style lang="scss" scoped>
-	.icons__hamburger-button {
+	.menu-icon {
 		display: inline-block;
 		position: relative;
 		padding: 0 0 0 3px;

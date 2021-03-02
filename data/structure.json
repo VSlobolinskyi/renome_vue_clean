@@ -1,10 +1,17 @@
 {
   "navigation": {
     "logo": "Renome",
-    "navigationIcons": {
+    "icons": {
       "cart": {
         "alt": "Cart icon",
-        "src": "cart_icon.svg"
+        "src": "cart_icon.svg",
+        "cartStatus": "5"
+      },
+      "menuIcon": {
+        "hamburgerButton": {
+					"alt": "Hamburger button",
+					"src": "hamburger_button.svg"
+				}
       }
     }
   },
@@ -12,13 +19,11 @@
     "arrowContainer": {
       "arrows": [
         {
-          "id": 1,
           "src": "arrow_left_white.svg",
           "alt": "White arrow left",
           "direction": "left"
         },
         {
-          "id": 2,
           "src": "arrow_right_white.svg",
           "alt": "White arrow right",
           "direction": "right"
@@ -28,7 +33,6 @@
     },
     "imageContainers": [
       {
-        "id": 1,
         "isHidden": 0,
         "isTop": 1,
         "image": {
@@ -47,7 +51,6 @@
         }
       },
       {
-        "id": 2,
         "isHidden": 1,
         "isTop": 1,
         "image": {
@@ -66,7 +69,6 @@
         }
       },
       {
-        "id": 3,
         "isHidden": 1,
         "isTop": 1,
         "image": {
@@ -116,51 +118,51 @@
       "innerText": "more about us via photos",
       "uppercase": 1
     },
-    "galleryRows": [
+    "galleryImages": [
       {
-        "rowId": 1,
-        "images": [
-          {
-            "imgId": 1,
-            "src": "gallery_img_1.png",
-            "alt": "Restorant building view"
-          },
-          {
-            "imgId": 2,
-            "src": "gallery_img_2.png",
-            "alt": "Small restorant building view"
-          }
-        ]
+        "path": "gallery_img_1.png",
+        "alt": "Restorant building view"
       },
       {
-        "rowId": 2,
-        "images": [
-          {
-            "imgId": 1,
-            "src": "gallery_img_3.png",
-            "alt": "Inside retorant view"
-          },
-          {
-            "imgId": 2,
-            "src": "gallery_img_4.png",
-            "alt": "Everyday specials banner"
-          }
-        ]
+        "path": "gallery_img_2.png",
+        "alt": "Small restorant building view"
       },
       {
-        "rowId": 3,
-        "images": [
-          {
-            "imgId": 1,
-            "src": "gallery_img_5.png",
-            "alt": "Salads"
-          },
-          {
-            "imgId": 2,
-            "src": "gallery_img_6.png",
-            "alt": "Snaks"
-          }
-        ]
+        "path": "gallery_img_3.png",
+        "alt": "Inside retorant view"
+      },
+      {
+        "path": "gallery_img_4.png",
+        "alt": "Everyday specials banner"
+      },
+      {
+        "path": "gallery_img_5.png",
+        "alt": "Salads"
+      },
+      {
+        "path": "gallery_img_6.png",
+        "alt": "Snaks"
+      }
+    ]
+  },
+  "footer": {
+    "coppyright": "copyright 2015 renome by estetique",
+    "followUs": "follow us:",
+    "icons": [
+      {
+        "src": "facebook_icon.svg",
+        "alt": "Facebook icon",
+        "href": "#"
+      },
+      {
+        "src": "twitter_icon.svg",
+        "alt": "Twitter icon",
+        "href": "#"
+      },
+      {
+        "src": "google_plus_icon.svg",
+        "alt": "Google plus icon",
+        "href": "#"
       }
     ]
   }

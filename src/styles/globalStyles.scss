@@ -34,8 +34,12 @@ body {
 
 img {
 	-webkit-user-drag: none;
-	-webkit-user-select: none;
+	user-select: none;
 }
 a {
 	text-decoration: none;
+}
+
+@function rem($pxValue) {
+	@return #{$pxValue / 16px}rem;
 }
