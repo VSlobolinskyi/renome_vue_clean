@@ -39,7 +39,3 @@ img {
 a {
 	text-decoration: none;
 }
-
-@function rem($pxValue) {
-	@return #{$pxValue / 16px}rem;
-}

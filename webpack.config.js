@@ -27,7 +27,8 @@ module.exports = {
 					{
 						loader: 'sass-loader',
 						options: {
-							additionalData: `@import "/src/styles/globalStyles.scss";`,
+							additionalData: `@import "/src/styles/globalStyles.scss"; 
+							@import "/src/styles/mixins.scss";`
 						}
 					}
 				]

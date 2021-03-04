@@ -30,11 +30,11 @@
 		data() {
 			return {
 				json: {},
-				fetch: false
+				isFetch: false
 			}
 		},
 		created() {
-			fetch.value ? fetch("https://raw.githubusercontent.com/Hetachi/FrontEndTraining/master/structure.json").then(response => {
+			this.isFetch ? fetch("https://raw.githubusercontent.com/Hetachi/FrontEndTraining/master/structure.json").then(response => {
 			this.json = response.json();
 			console.log(json);
 			}).catch(error => console.log(error)) : this.json = localJson;
