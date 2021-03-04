@@ -6,7 +6,7 @@
 
 <script>
 	export default {
-		name: "SocilNetwrkIcon",
+		name: "SocialNetworkIcon",
 		props: ["icon"],
 		props: {
 			icon: Object

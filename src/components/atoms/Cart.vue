@@ -8,8 +8,8 @@
 <script>
 	export default {
 		name: "Cart",
-		porps: ["cart"],
-		props: {
+		props: ["cart"],
+		propType: {
 			cart: Object
 		}
 	}
