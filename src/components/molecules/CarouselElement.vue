@@ -17,7 +17,9 @@
       Title,
       SubTitle
     },
-    props: ["imageContainer"]
+    props: {
+      imageContainer: Object
+    }
   }
 </script>
 

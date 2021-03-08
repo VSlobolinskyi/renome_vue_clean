@@ -1,7 +1,7 @@
 <template>
   <div class="carousel">
     <CarouselElement :imageContainer="imageContainer" :key="index"  v-for="(imageContainer, index) in carousel.imageContainers"/>
-    <CarouselNavigation v-on:traverse="switchImage" :arrows="carousel.arrowContainer"/>
+    <CarouselNavigation v-on:traverse="switchImage" :arrows="carousel.arrows"/>
   </div>
 </template>
 
@@ -14,7 +14,6 @@
       CarouselNavigation,
       CarouselElement
     },
-    props: ["carousel"],
     props: {
       carousel: Object
     },

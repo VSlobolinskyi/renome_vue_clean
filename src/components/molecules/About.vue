@@ -18,7 +18,6 @@ export default {
     SubTitle,
     Article
   },
-  props: ["about"],
   props: {
     about: Object
   }

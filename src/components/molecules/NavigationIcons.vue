@@ -15,7 +15,6 @@
       Cart,
       MenuIcon
     },
-    props: ["icons"],
     props: {
       icons: Object
     }

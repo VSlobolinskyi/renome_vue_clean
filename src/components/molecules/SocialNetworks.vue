@@ -11,7 +11,6 @@
     components: {
       SocialNetworkIcon
     },
-    props: ["icons"],
     props: {
       icons: Array
     }

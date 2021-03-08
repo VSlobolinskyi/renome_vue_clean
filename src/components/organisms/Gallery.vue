@@ -19,7 +19,6 @@
       SubTitle,
       GalleryGrid
     },
-    props: ["gallery"],
     props: {
       gallery: Object
     }

@@ -7,7 +7,9 @@
 <script>
   export default {
     name: "SubTitle",
-    props: ["subTitle"]
+    props: {
+      subTitle: Object
+    }
   }
 </script>
 

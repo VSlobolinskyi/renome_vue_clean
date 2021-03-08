@@ -7,7 +7,6 @@
 <script>
   export default {
     name: "SocialNetworkIcon",
-    props: ["icon"],
     props: {
       icon: Object
     }

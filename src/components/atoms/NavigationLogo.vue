@@ -1,13 +1,12 @@
 <template>
-  <p class="navigation__logo">{{logo}}</p>
+  <p class="navigation__logo">{{logoText}}</p>
 </template>
 
 <script>
   export default {
     name: "NavigationLogo",
-    props: ["logo"],
     props: {
-      logo: String
+      logoText: String
     }
   }
 </script>

@@ -14,7 +14,6 @@
       NavigationLogo,
       NavigationIcons
     },
-    props: ["navigation"],
     props: {
       navigation: Object
     }

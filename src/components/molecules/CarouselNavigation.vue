@@ -6,16 +6,13 @@
 
 <script>
   import CarouselArrow from "../atoms/CarouselArrow.vue"
-  import json from "../../../data/structure.json"
   export default {
     name: "CarouselNavigation",
     components: {
       CarouselArrow
     },
-    data () {
-      return {
-        arrows: json.carousel.arrowContainer.arrows
-      }				
+    props: {
+      arrows: Array
     }
   }
 </script>

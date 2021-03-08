@@ -5,7 +5,9 @@
 <script>
   export default {
     name: "GalleryImage",
-    props: ["img"]
+    props: {
+      img: Object
+    }
   }
 </script>
 

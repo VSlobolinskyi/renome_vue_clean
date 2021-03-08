@@ -7,7 +7,9 @@
 <script>
   export default {
     name: "CarouselArrow",
-    props: ['arrow']
+    props: {
+      arrow: Object
+    }
   }
 </script>
 

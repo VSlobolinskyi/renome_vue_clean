@@ -10,7 +10,6 @@
   import SubTitle from "../atoms/SubTitle.vue"
   export default {
     name: "HomeTextBox",
-    props: ["textBox"],
     props: {
       textBox: Object
     },

@@ -16,7 +16,6 @@
       TailLogo,
       SocialNetworks
     },
-    props: ["footer"],
     props: {
       footer: Object
     }

@@ -7,7 +7,6 @@
 <script>
   export default {
     name: "GalleryGrid",
-    props: ["images"],
     props: {
       images: Array
     }

@@ -5,7 +5,6 @@
 <script>
   export default {
     name: "HamburgerButton",
-    porps: ["menuIcon"],
     props: {
       menuIcon: Object
     }
