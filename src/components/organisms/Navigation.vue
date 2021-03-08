@@ -1,6 +1,6 @@
 <template>
   <div class="navigation">
-    <NavigationLogo :logo="navigation.logo"/>
+    <NavigationLogo :logoText="navigation.logo"/>
     <NavigationIcons :icons="navigation.icons"/>
   </div>	
 </template>

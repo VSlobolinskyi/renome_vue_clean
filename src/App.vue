@@ -1,11 +1,11 @@
 <template>
   <div id="app">
-    <Navigation :navigation="json.navigation"/>
-    <Carousel :carousel="json.carousel"/>
-    <Building :images="json.building.images"/>
-    <About :about="json.about"/>
-    <Gallery :gallery="json.gallery"/>
-    <Footer :footer="json.footer"/>
+    <Navigation :navigation="structure.navigation"/>
+    <Carousel :carousel="structure.carousel"/>
+    <Building :images="structure.building.images"/>
+    <About :about="structure.about"/>
+    <Gallery :gallery="structure.gallery"/>
+    <Footer :footer="structure.footer"/>
   </div>
 </template>
 
@@ -16,7 +16,7 @@
   import Footer from "./components/organisms/Footer.vue"
   import Navigation from "./components/organisms/Navigation.vue"
   import Carousel from "./components/organisms/Carousel.vue"
-  import localJson from "/data/structure.json"
+  import localStructure from "/data/structure.json"
   export default {
     name: "App",
     components: {
@@ -29,15 +29,18 @@
     },
     data() {
       return {
-        json: {},
+        structure: {},
         isFetch: false
       }
     },
     created() {
-      this.isFetch ? fetch("https://raw.githubusercontent.com/Hetachi/FrontEndTraining/master/structure.json").then(response => {
-      this.json = response.json();
-      console.log(json);
-      }).catch(error => console.log(error)) : this.json = localJson;
+      this.isFetch ? fetch("https://raw.githubusercontent.com/Hetachi/FrontEndTraining/master/structure.json")
+      .then(response => response.json())
+      .then(data => {
+        this.structure = data;
+      })
+      .catch(error => console.log(error)) : this.structure = localStructure;
+      
     }
   }	
 </script>
