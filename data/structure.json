@@ -9,9 +9,9 @@
       },
       "menuIcon": {
         "hamburgerButton": {
-					"alt": "Hamburger button",
-					"src": "hamburger_button.svg"
-				}
+          "alt": "Hamburger button",
+          "src": "hamburger_button.svg"
+        }
       }
     }
   },
@@ -28,8 +28,7 @@
           "alt": "White arrow right",
           "direction": "right"
         }
-      ],
-      "counter": false
+      ]
     },
     "imageContainers": [
       {

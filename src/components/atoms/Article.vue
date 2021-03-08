@@ -1,25 +1,25 @@
 <template>
   <div>
-		<p class="article">{{text}}</p>
+    <p class="article">{{text}}</p>
   </div>
 </template>
 
 <script>
-	export default {
-		name: "Aricle",
+  export default {
+    name: "Aricle",
     props: ["text"]
-	}
+  }
 </script>
 
 <style lang="scss">
-	.article {
-		margin: 0;
-		padding: 0;
-		font-size: rem(12px);
-		letter-spacing: 2px;
-		line-height: 30px;
-		color: $darkBlue;
-		font-family: "Montserrat", "Ariel", "Times New Roman", "Times";
-		cursor: default;
-	}
+  .article {
+    margin: 0;
+    padding: 0;
+    font-size: rem(12px);
+    letter-spacing: 2px;
+    line-height: 30px;
+    color: $darkBlue;
+    font-family: "Montserrat", "Ariel", "Times New Roman", "Times";
+    cursor: default;
+  }
 </style>

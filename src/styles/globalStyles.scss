@@ -8,34 +8,34 @@ $gray: #EDEFF2;
 $darkBlue: #1d2533;
 
 @font-face {
-	font-family: "Pacifico";
-	src: url("/src/assets/fonts/Pacifico.ttf");
+  font-family: "Pacifico";
+  src: url("/src/assets/fonts/Pacifico.ttf");
 }
-	
+  
 @font-face {
-	font-family: "Axis";
-	src: url("/src/assets/fonts/axis.woff");
+  font-family: "Axis";
+  src: url("/src/assets/fonts/axis.woff");
 }
 
 @font-face {
-	font-family: "Montserrat";
-	src: url("/src/assets/fonts/Montserrat-Bold.ttf");
+  font-family: "Montserrat";
+  src: url("/src/assets/fonts/Montserrat-Bold.ttf");
 }
 
 body {
-	margin: 0;
-	overflow-x: hidden;
+  margin: 0;
+  overflow-x: hidden;
 }
 
 .body--disable-scroll {
-	height: 100%;
-	overflow: hidden;
+  height: 100%;
+  overflow: hidden;
 }
 
 img {
-	-webkit-user-drag: none;
-	user-select: none;
+  -webkit-user-drag: none;
+  user-select: none;
 }
 a {
-	text-decoration: none;
+  text-decoration: none;
 }
