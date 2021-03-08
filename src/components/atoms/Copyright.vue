@@ -17,7 +17,7 @@
     font-size: 12px;
     letter-spacing: 1px;
     color: $darkBlue;
-    font-family: "Axis", "Ariel", "Times New Roman", "Times";
+    font-family: $axis;
     cursor: default;
   }
 </style>

@@ -2,7 +2,7 @@
   <div class="footer">
     <p class="footer__follow-us">{{footer.followUs}}</p>
     <SocialNetworks :icons="footer.icons"/>
-    <TailLogo/>
+    <TailLogo :logoText="footer.logo"/>
     <p class="footer__copyright">{{footer.coppyright}}</p>
   </div>
 </template>

@@ -1,19 +1,22 @@
 <template>
-  <p class="tail__logo"></p>
+  <p class="tail-logo">{{logoText}}</p>
 </template>
 
 <script>
   export default {
-    name: "TailLogo"
+    name: "TailLogo",
+    props: {
+      logoText: String
+    }
   }
 </script>
 
 <style lang="scss" scoped>
-  .logo {
+  .tail-logo {
     align-self: center;
     font-size: 20px;
     letter-spacing: 2px;
-    font-family: "Pacifico", "Ariel", "Times New Roman", "Times";
+    font-family: $pacifico;
     cursor: default;
   }
 </style>

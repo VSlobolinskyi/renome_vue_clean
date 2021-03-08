@@ -21,7 +21,7 @@
     letter-spacing: 2px;
     line-height: 30px;
     color: $darkBlue;
-    font-family: "Montserrat", "Ariel", "Times New Roman", "Times";
+    font-family: $montesrrat;
     cursor: default;
   }
 </style>

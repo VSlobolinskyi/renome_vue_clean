@@ -17,7 +17,7 @@
     font-size: 12px;
     line-height: 25px;
     color: $darkBlue;
-    font-family: "Montserrat", "Ariel", "Times New Roman", "Times";
+    font-family: $montesrrat;
     text-align: right;
     cursor: default;
   }

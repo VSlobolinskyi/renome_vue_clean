@@ -1,5 +1,5 @@
 <template>
-  <p class="navigation__logo">{{logoText}}</p>
+  <p class="navigation-logo">{{logoText}}</p>
 </template>
 
 <script>
@@ -12,13 +12,13 @@
 </script>
 
 <style lang="scss" scoped>
-  .navigation__logo {
+  .navigation-logo {
     font-size: 25px;
     letter-spacing: 3px;
     padding: 0 0 0 10px;
     margin: 0;
     color: $black;
-    font-family: "Pacifico";
+    font-family: $pacifico;
     cursor: default;
   }
 </style>

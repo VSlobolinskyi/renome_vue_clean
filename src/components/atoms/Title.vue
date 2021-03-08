@@ -20,7 +20,7 @@
     font-size: 38px;
     letter-spacing: 8px;
     color: $darkBlue;
-    font-family: "Axis", "Ariel", "Times New Roman", "Times";
+    font-family: $axis;
     cursor: default;
     
     &--white {

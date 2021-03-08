@@ -32,7 +32,7 @@
     padding: 0 3px;
     font-size: 12px;
     letter-spacing: 2px;
-    font-family: "Montserrat";
+    font-family: $montesrrat;
     cursor: default;
   }
 </style>
