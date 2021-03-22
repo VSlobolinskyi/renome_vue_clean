@@ -1,3 +1,7 @@
 @function rem($pxValue) {
   @return #{$pxValue / 16px}rem;
 }
+
+@function em($pxValue){
+  @return #{$pxValue / 16px}em;
+}

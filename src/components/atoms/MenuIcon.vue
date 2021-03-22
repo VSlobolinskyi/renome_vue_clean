@@ -1,12 +1,23 @@
 <template>
-  <img :alt="menuIcon.hamburgerButton.alt" :src="require(`/src/assets/icons/${menuIcon.hamburgerButton.src}`)" class="menu-icon">
+  <img v-on:click="change" :alt="currentIcon.alt" :src="require(`/src/assets/icons/${currentIcon.src}`)" class="menu-icon">
 </template>
 
 <script>
   export default {
     name: "HamburgerButton",
+    data(){
+      return {
+        currentIcon: this.menuIcon.hamburgerButton
+      }
+    },
     props: {
       menuIcon: Object
+    },
+    methods: {
+      change: function() {
+        console.log("works");
+        this.currentIcon = this.menuIcon.cross
+      }
     }
   }
 </script>

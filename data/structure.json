@@ -11,6 +11,10 @@
         "hamburgerButton": {
           "alt": "Hamburger button",
           "src": "hamburger_button.svg"
+        },
+        "cross": {
+          "alt": "Cross",
+          "src": "cross_icon.svg"
         }
       }
     }

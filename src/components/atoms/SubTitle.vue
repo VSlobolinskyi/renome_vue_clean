@@ -19,7 +19,7 @@
     margin: 0 0 30px;
     font-size: 22px;
     letter-spacing: 2px;
-    font-family: "Montserrat", "Ariel", "Times New Roman", "Times";
+    font-family: $montserrat;
     cursor: default;
 
     &--uppercase {

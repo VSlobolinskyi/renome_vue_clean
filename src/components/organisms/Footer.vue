@@ -1,19 +1,19 @@
 <template>
-  <div class="footer">
+  <footer class="footer">
     <p class="footer__follow-us">{{footer.followUs}}</p>
     <SocialNetworks :icons="footer.icons"/>
-    <TailLogo :logoText="footer.logo"/>
-    <p class="footer__copyright">{{footer.coppyright}}</p>
-  </div>
+    <Logo :logoText="footer.logo"/>
+    <p class="footer__copyright">{{footer.copyright}}</p>
+  </footer>
 </template>
 
 <script>
-  import TailLogo from "../atoms/TailLogo.vue"
+  import Logo from "../atoms/Logo.vue"
   import SocialNetworks from "../molecules/SocialNetworks.vue"
   export default {
     name: "Footer",
     components: {
-      TailLogo,
+      Logo,
       SocialNetworks
     },
     props: {
@@ -28,11 +28,12 @@
     display: flex;
     box-sizing: border-box;
     flex-direction: column;
+    text-align: center;
     background-color: $gray;
     padding: 20px 10px;
     width: 100vw;
     cursor: default;
-    font-size: 12px;
+    font-size: 20px;
     color: $darkBlue;
 
     &__follow-us {
@@ -40,17 +41,19 @@
       padding: 15px 0;
       margin: 0;
       line-height: 25px;
-      font-family: "Montserrat", "Ariel", "Times New Roman", "Times";
+      font-size: 12px;
+      font-family: $montserrat;
       text-align: right;
       text-transform: uppercase;
     }
 
     &__copyright {
       text-align: center;
-      padding: 0 0 10px;
+      padding: 15px 0 5px 0;
       margin: 0;
       letter-spacing: 1px;
-      font-family: "Axis", "Ariel", "Times New Roman", "Times";
+      font-size: 12px;
+      font-family: $axis;
       text-transform: uppercase;
     }
   }

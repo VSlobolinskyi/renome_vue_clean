@@ -1,16 +1,14 @@
 <template>
   <div class="social-networks">
-    <SocialNetworkIcon :icon="icon" :key="index" v-for="(icon, index) in icons" />
+    <a :icon="icon" :key="index" v-for="(icon, index) in icons" :href="icon.href">
+      <img :src="require(`/src/assets/icons/${icon.src}`)" :alt="icon.alt" class="social-networks__icon">
+    </a>
   </div>
 </template>
 
 <script>
-  import SocialNetworkIcon from "../atoms/SocialNetworkIcon.vue"
   export default {
     name: "SocialNetwokrs",
-    components: {
-      SocialNetworkIcon
-    },
     props: {
       icons: Array
     }
@@ -21,5 +19,11 @@
   .social-networks {
     display: flex;
     align-self: center;
+
+    &__icon {
+      width: 33px;
+      height: 33px;
+      padding: 0 5px;
+    }
   }
 </style>
