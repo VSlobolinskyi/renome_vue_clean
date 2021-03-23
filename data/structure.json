@@ -20,18 +20,14 @@
     }
   },
   "carousel": {
-    "arrows": [
-      {
-        "src": "arrow_left_white.svg",
-        "alt": "White arrow left",
-        "direction": "left"
-      },
-      {
-        "src": "arrow_right_white.svg",
-        "alt": "White arrow right",
-        "direction": "right"
-      }
-    ],
+    "arrowLeft": {
+      "src": "arrow_left_white.svg",
+      "alt": "Arrow left"
+    },
+    "arrowRight": {
+      "src": "arrow_right_white.svg",
+      "alt": "Arrow right"
+    },
     "imageContainers": [
       {
         "isHidden": false,
