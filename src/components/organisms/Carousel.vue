@@ -13,12 +13,10 @@
 </template>
 
 <script>
-  import CarouselNavigation from "../molecules/CarouselNavigation.vue"
   import CarouselElement from "../molecules/CarouselElement.vue"
   export default {
     name: "Carousel",
     components: {
-      CarouselNavigation,
       CarouselElement
     },
     props: {

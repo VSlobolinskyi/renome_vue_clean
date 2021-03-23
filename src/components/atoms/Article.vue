@@ -18,8 +18,8 @@
     margin: 0;
     padding: 0;
     font-size: rem(12px);
-    letter-spacing: 2px;
-    line-height: 30px;
+    letter-spacing: rem(2px);
+    line-height: rem(30px);
     color: $darkBlue;
     font-family: $montserrat;
     cursor: default;

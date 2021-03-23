@@ -19,6 +19,7 @@
   .social-networks {
     display: flex;
     align-self: center;
+    -webkit-tap-highlight-color: transparent;
 
     &__icon {
       width: 33px;

@@ -30,7 +30,7 @@
     width: 100%;
     height: 45px;
     top: 0;
-    padding: 0 5px 10px;
+    padding: 0 10px 10px;
     background-color: $white;
     z-index: 2;
   }

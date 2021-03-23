@@ -19,7 +19,7 @@
     display: inline-block;
     position: relative;
     padding: 0 3px;
-    margin:  0 0 -1.5px 0;
+    margin:  0 0 -2px 0;
     width: 15px;
     height: 12px;
     cursor: pointer;
