@@ -40,7 +40,6 @@
         this.structure = data;
       })
       .catch(error => console.log(error)) : this.structure = localStructure;
-      
     }
   }	
 </script>

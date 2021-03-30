@@ -2,7 +2,7 @@
   <div class="carousel">
     <CarouselElement :imageContainer="imageContainer" :key="index"  v-for="(imageContainer, index) in carousel.imageContainers"/>
     <div class="carousel__navigation">
-      <div v-on:click="moveRight" class="arrow">
+      <div v-on:click="moveLeft" class="arrow">
         <img :src="require(`/src/assets/icons/${carousel.arrowLeft.src}`)" :alt="carousel.arrowLeft.alt" class="arrow__icon">
       </div>
       <div v-on:click="moveRight" class="arrow">
@@ -14,7 +14,11 @@
 
 <script>
   import CarouselElement from "../molecules/CarouselElement.vue"
+  import Vue from "vue"
   export default {
+    created(){
+      this.addCarouselLogic;
+    },
     name: "Carousel",
     components: {
       CarouselElement
@@ -22,26 +26,39 @@
     props: {
       carousel: Object
     },
+    computed: {
+      addCarouselLogic() {
+        this.carousel.imageContainers.forEach((container, index) => {
+          if(index === 0){
+            Vue.set(container, "isHidden", false);
+          }
+          else {
+            Vue.set(container, "isHidden", true);
+          }
+           Vue.set(container, "isTop", true);
+        });
+      }
+    },
     methods: {
       moveLeft: function() {
         const imagesInCarousel = this.carousel.imageContainers.length;
-        let imageContainers = this.carousel.imageContainers
+        let imageContainers = this.carousel.imageContainers;
         let active = 0;
         for (; active < imagesInCarousel-1 ; active++) {
           if (!imageContainers[active].isHidden){
             break;
           }
         }
-        imageContainers[active].isTop = 1;
-        imageContainers[active].isHidden = 1;
+        imageContainers[active].isTop = true;
+        imageContainers[active].isHidden = true;
         if(active == 0){
           active = imagesInCarousel-1;
         }
         else {
           active--;
         }
-        imageContainers[active].isTop = 0;
-        imageContainers[active].isHidden = 0;
+        imageContainers[active].isTop = false;
+        imageContainers[active].isHidden = false;
       },
       moveRight: function() {
         const imagesInCarousel = this.carousel.imageContainers.length;
@@ -52,16 +69,16 @@
             break;
           }
         }
-        imageContainers[active].isTop = 0;
-        imageContainers[active].isHidden = 1;
+        imageContainers[active].isTop = false;
+        imageContainers[active].isHidden = true;
         if(active == imagesInCarousel-1){
           active = 0;
         }
         else {
           active++;
         }
-        imageContainers[active].isTop = 1;
-        imageContainers[active].isHidden = 0;
+        imageContainers[active].isTop = true;
+        imageContainers[active].isHidden = false;
       }
     }
   }

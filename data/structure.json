@@ -30,8 +30,6 @@
     },
     "imageContainers": [
       {
-        "isHidden": false,
-        "isTop": true,
         "image": {
           "src": "carousel_img_1.png",
           "alt": "Delecious omlette"
@@ -48,8 +46,6 @@
         }
       },
       {
-        "isHidden": true,
-        "isTop": true,
         "image": {
           "src": "carousel_img_2.png",
           "alt": "Captivating desert"
@@ -66,8 +62,6 @@
         }
       },
       {
-        "isHidden": true,
-        "isTop": true,
         "image": {
           "src": "carousel_img_3.png",
           "alt": "Fragrant spices"
