@@ -2,7 +2,7 @@
   <div :class="{'carousel-element--top': imageContainer.isTop, 'carousel-element--hidden': imageContainer.isHidden}" class="carousel-element">
     <div class="carousel-element__shader"></div>
     <img :src="require(`../../assets/images/${imageContainer.image.src}`)" :alt="imageContainer.image.alt" class="carousel-element__image"> 
-    <TextBox :textBox="imageContainer.textBox"/>
+    <TextBox :title="imageContainer.title" :subTitle="imageContainer.subTitle"/>
   </div>
 </template>
 
@@ -54,6 +54,8 @@
       position: relative;
       width: 100%;
       height: 100%;
+      -webkit-user-drag: none;
+      user-select: none;
     }
   }	
 </style>

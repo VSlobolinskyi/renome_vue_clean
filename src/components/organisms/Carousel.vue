@@ -118,6 +118,8 @@
       width: 24px;
       height: 40px;
       align-self: center;
+      -webkit-user-drag: none;
+      user-select: none;
     }
   }
 

@@ -25,6 +25,8 @@
     &__image1{
       width: 81%;
       padding: 0 0 0 16%;
+      -webkit-user-drag: none;
+      user-select: none;
     }
     
     &__image2{
@@ -32,6 +34,8 @@
       position: relative;
       margin: -12% 0 0;
       padding: 0 0 0 3%;
+      -webkit-user-drag: none;
+      user-select: none;
     }
   }
 </style>

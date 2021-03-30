@@ -1,6 +1,6 @@
 <template>
   <div>
-    <p :class="{'subTitle--uppercase': subTitle.uppercase}" class="subTitle">{{subTitle.innerText}}</p>
+    <p class="subTitle">{{subTitle}}</p>
   </div>
 </template>
 
@@ -8,7 +8,7 @@
   export default {
     name: "SubTitle",
     props: {
-      subTitle: Object
+      subTitle: String
     }
   }
 </script>
@@ -16,18 +16,12 @@
 <style lang="scss">
   .subTitle {
     color: $crimson;
-    margin: 0 0 30px;
-    font-size: 22px;
-    letter-spacing: 2px;
+    text-transform: uppercase;
+    padding: 10px 0 10px;
+    margin: 0;
+    font-size: rem(11px);
     font-family: $montserrat;
+    letter-spacing: 1px;
     cursor: default;
-
-    &--uppercase {
-      text-transform: uppercase;
-      padding: 10px 0 10px;
-      margin: 0;
-      font-size: rem(11px);
-      letter-spacing: 1px;
-    }
   }
 </style>

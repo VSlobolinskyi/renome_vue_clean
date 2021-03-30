@@ -1,21 +1,16 @@
 <template>
   <div class="text-box">
-    <Title :title="textBox.title"/>
-    <SubTitle :subTitle="textBox.subTitle"/>
+    <h2 class="text-box__title">{{title}}</h2>
+    <p class="text-box__subTitle">{{subTitle}}</p>
   </div>
 </template>
 
 <script>
-  import Title from "../atoms/Title.vue"
-  import SubTitle from "../atoms/SubTitle.vue"
   export default {
     name: "HomeTextBox",
     props: {
-      textBox: Object
-    },
-    components: {
-      Title,
-      SubTitle
+      title: String,
+      subTitle: String
     }
   }
 </script>
@@ -28,5 +23,25 @@
     bottom: 120px;
     cursor: default;
     z-index: 1;
+
+    &__subTitle {
+      color: $crimson;
+      margin: 0 0 30px;
+      font-size: 22px;
+      letter-spacing: 2px;
+      font-family: $montserrat;
+      cursor: default;
+    }
+
+    &__title {
+      color: $white;
+      margin: 0 0 5px;
+      padding: 0;
+      font-size: 28px;
+      letter-spacing: 3px;
+      font-family: $axis;
+      cursor: default;
+    }
   }
+
 </style>
