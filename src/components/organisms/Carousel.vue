@@ -26,6 +26,11 @@
     props: {
       carousel: Object
     },
+    data() {
+      return {
+        active: 0
+      }
+    },
     computed: {
       addCarouselLogic() {
         this.carousel.imageContainers.forEach((container, index) => {
@@ -41,44 +46,32 @@
     },
     methods: {
       moveLeft: function() {
-        const imagesInCarousel = this.carousel.imageContainers.length;
+        const last = this.carousel.imageContainers.length - 1;
         let imageContainers = this.carousel.imageContainers;
-        let active = 0;
-        for (; active < imagesInCarousel-1 ; active++) {
-          if (!imageContainers[active].isHidden){
-            break;
-          }
-        }
-        imageContainers[active].isTop = true;
-        imageContainers[active].isHidden = true;
-        if(active == 0){
-          active = imagesInCarousel-1;
+        imageContainers[this.active].isTop = true;
+        imageContainers[this.active].isHidden = true;
+        if(this.active === 0){
+          this.active = last;
         }
         else {
-          active--;
+          this.active--;
         }
-        imageContainers[active].isTop = false;
-        imageContainers[active].isHidden = false;
+        imageContainers[this.active].isTop = false;
+        imageContainers[this.active].isHidden = false;
       },
       moveRight: function() {
-        const imagesInCarousel = this.carousel.imageContainers.length;
+        const last = this.carousel.imageContainers.length -1;
         let imageContainers = this.carousel.imageContainers
-        let active = 0;
-        for (; active < imagesInCarousel-1 ; active++) {
-          if (!imageContainers[active].isHidden){
-            break;
-          }
-        }
-        imageContainers[active].isTop = false;
-        imageContainers[active].isHidden = true;
-        if(active == imagesInCarousel-1){
-          active = 0;
+        imageContainers[this.active].isTop = false;
+        imageContainers[this.active].isHidden = true;
+        if(this.active === last){
+          this.active = 0;
         }
         else {
-          active++;
+          this.active++;
         }
-        imageContainers[active].isTop = true;
-        imageContainers[active].isHidden = false;
+        imageContainers[this.active].isTop = true;
+        imageContainers[this.active].isHidden = false;
       }
     }
   }
