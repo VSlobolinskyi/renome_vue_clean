@@ -1,36 +1,60 @@
 <template>
-	<div class="tail">
-		<FollowUs/>
-		<SocialNetworks/>
-		<TailLogo/>
-		<Copyright/>
-	</div>
+  <footer class="footer">
+    <p class="footer__follow-us">{{footer.followUs}}</p>
+    <SocialNetworks :icons="footer.icons"/>
+    <Logo :logoText="footer.logo"/>
+    <p class="footer__copyright">{{footer.copyright}}</p>
+  </footer>
 </template>
 
 <script>
-	import TailLogo from "../atoms/TailLogo.vue"
-	import Copyright from "../atoms/Copyright.vue"
-	import FollowUs from "../atoms/FollowUs.vue"
-	import SocialNetworks from "../molecules/SocialNetworks.vue"
-	export default {
-		name: "Tail",
-		components: {
-			TailLogo,
-			Copyright,
-			FollowUs,
-			SocialNetworks
-		}
-	}
+  import Logo from "../atoms/Logo.vue"
+  import SocialNetworks from "../molecules/SocialNetworks.vue"
+  export default {
+    name: "Footer",
+    components: {
+      Logo,
+      SocialNetworks
+    },
+    props: {
+      footer: Object
+    }
+  }
 </script>
 
 <style lang="scss" scoped>
-	.tail {
-		position: relative;
-		display: flex;
-		box-sizing: border-box;
-		flex-direction: column;
-		background-color: $gray;
-		padding: 20px 10px;
-		width: 100vw;
-	}
+  .footer {
+    position: relative;
+    display: flex;
+    box-sizing: border-box;
+    flex-direction: column;
+    text-align: center;
+    background-color: $gray;
+    padding: 20px 10px;
+    width: 100vw;
+    cursor: default;
+    font-size: 20px;
+    color: $darkBlue;
+
+    &__follow-us {
+      align-self: center;
+      padding: 15px 0;
+      margin: 0;
+      line-height: 25px;
+      font-size: 12px;
+      font-family: $montserrat;
+      text-align: right;
+      text-transform: uppercase;
+    }
+
+    &__copyright {
+      text-align: center;
+      padding: 15px 0 5px 0;
+      margin: 0;
+      letter-spacing: 1px;
+      font-size: 12px;
+      font-family: $axis;
+      text-transform: uppercase;
+    }
+  }
 </style>

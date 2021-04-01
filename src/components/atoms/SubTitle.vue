@@ -1,31 +1,27 @@
 <template>
   <div>
-		<p :class="{'subTitle--uppercase': subTitle.uppercase}" class="subTitle">{{subTitle.innerText}}</p>
+    <p class="subTitle">{{subTitle}}</p>
   </div>
 </template>
 
 <script>
-	export default {
-		name: "SubTitle",
-		props: ["subTitle"]
-	}
+  export default {
+    name: "SubTitle",
+    props: {
+      subTitle: String
+    }
+  }
 </script>
 
 <style lang="scss">
-	.subTitle {
-		color: $crimson;
-		margin: 0 0 30px;
-		font-size: 22px;
-		letter-spacing: 2px;
-		font-family: "Montserrat", "Ariel", "Times New Roman", "Times";
-		cursor: default;
-
-		&--uppercase {
-			text-transform: uppercase;
-			padding: 10px 0 10px;
-			margin: 0;
-			font-size: 11px;
-			letter-spacing: 1px;
-		}
-	}
+  .subTitle {
+    color: $crimson;
+    text-transform: uppercase;
+    padding: 10px 0 10px;
+    margin: 0;
+    font-size: rem(11px);
+    font-family: $montserrat;
+    letter-spacing: 1px;
+    cursor: default;
+  }
 </style>
