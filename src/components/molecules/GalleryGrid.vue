@@ -23,6 +23,8 @@
       box-sizing: border-box;
       width: 100%;
       padding: 5px;
+      -webkit-user-drag: none;
+      user-select: none;
     }
   }
 </style>

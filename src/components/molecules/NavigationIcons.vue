@@ -27,6 +27,7 @@
     display: flex;
     align-items: center;
     padding: 10px 0 0 0;
+    
 
     &__divider {
       display: inline;

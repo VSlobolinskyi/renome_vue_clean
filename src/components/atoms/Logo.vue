@@ -14,5 +14,6 @@
     font-family: $pacifico;
     cursor: default;
     margin: 0;
+    user-select: none;
   }
 </style>

@@ -25,6 +25,8 @@
       width: 33px;
       height: 33px;
       padding: 0 5px;
+      -webkit-user-drag: none;
+      user-select: none;
     }
   }
 </style>

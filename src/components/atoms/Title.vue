@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h2 :class="{'title--white': title.white}" class="title">{{title.innerText}}</h2>
+    <h2 class="title">{{title}}</h2>
   </div> 
 </template>
 
@@ -8,7 +8,7 @@
   export default {
     name: "Title",
     props: {
-      title: Object
+      title: String
     }
   }
 </script>
@@ -22,12 +22,5 @@
     color: $darkBlue;
     font-family: $axis;
     cursor: default;
-    
-    &--white {
-      color: $white;
-      margin: 0 0 5px;
-      font-size: 28px;
-      letter-spacing: 3px;
-    }
   }
 </style>

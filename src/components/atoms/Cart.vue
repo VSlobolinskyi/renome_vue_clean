@@ -24,6 +24,8 @@
     height: 12px;
     cursor: pointer;
     -webkit-tap-highlight-color: transparent;
+    -webkit-user-drag: none;
+    user-select: none;
   }
 
   .cart-status {

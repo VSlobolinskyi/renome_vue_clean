@@ -31,6 +31,8 @@
     height: 15px;
     cursor: pointer;
     -webkit-tap-highlight-color: transparent;
+    -webkit-user-drag: none;
+    user-select: none;
 
     &--hidden {
       display: none
