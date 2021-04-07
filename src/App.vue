@@ -1,24 +1,49 @@
 <template>
   <div id="app">
-    <building/>
-		<about/>
-		<gallery/>
-		<tail/>
+    <Navigation :navigation="structure.navigation"/>
+    <Carousel :carousel="structure.carousel"/>
+    <Building :images="structure.building.images"/>
+    <About :about="structure.about"/>
+    <Gallery :gallery="structure.gallery"/>
+    <Footer :footer="structure.footer"/>
   </div>
 </template>
 
 <script>
-	import building from "./components/molecules/Building.vue"
-	import about from "./components/molecules/About.vue"
-	import gallery from "./components/organisms/Gallery.vue"
-	import tail from "./components/organisms/Tail.vue"
-	export default {
-		name: "app",
-		components: {
-			building,
-			about,
-			gallery,
-			tail
-		}
-	}
+  import Building from "./components/molecules/Building.vue"
+  import About from "./components/molecules/About.vue"
+  import Gallery from "./components/organisms/Gallery.vue"
+  import Footer from "./components/organisms/Footer.vue"
+  import Navigation from "./components/organisms/Navigation.vue"
+  import Carousel from "./components/organisms/Carousel.vue"
+  import localStructure from "/data/structure.json"
+  export default {
+    name: "App",
+    components: {
+      Building,
+      About,
+      Gallery,
+      Footer,
+      Navigation,
+      Carousel
+    },
+    data() {
+      return {
+        structure: {},
+        isFetch: false
+      }
+    },
+    created() {
+      this.isFetch ? fetch("https://raw.githubusercontent.com/Hetachi/FrontEndTraining/master/structure.json")
+      .then(response => response.json())
+      .then(data => {
+        this.structure = data;
+      })
+      .catch(error => console.log(error)) : this.structure = localStructure;
+    }
+  }	
 </script>
+
+<style lang="scss">
+  @import "./styles/globalStyles.scss";
+</style>
