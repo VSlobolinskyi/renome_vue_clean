@@ -7,7 +7,8 @@
     name: "HamburgerButton",
     data(){
       return {
-        currentIcon: this.menuIcon.hamburgerButton
+        currentIcon: this.menuIcon.hamburgerButton,
+        menuClosed: true
       }
     },
     props: {
@@ -15,8 +16,14 @@
     },
     methods: {
       change: function() {
-        console.log("works");
-        this.currentIcon = this.menuIcon.cross
+        if(this.menuClosed){
+          this.currentIcon = this.menuIcon.cross 
+          this.menuClosed = false
+        }
+        else {
+          this.currentIcon = this.menuIcon.hamburgerButton
+          this.menuClosed = true
+        }
       }
     }
   }

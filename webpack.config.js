@@ -1,10 +1,17 @@
 const {VueLoaderPlugin} = require('vue-loader');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const { CleanWebpackPlugin } = require('clean-webpack-plugin');
+const autoprefixer = require("autoprefixer");
 const path = require('path');	
 
 module.exports = {
   entry: {
     main: "./src/main.js"
+  },
+  output: {
+		filename: "[name].[contenthash:8].js",
+		path: path.resolve(__dirname, "dist"),
+		chunkFilename: "[name].[contenthash:8].js",
   },
   module: {
     rules: [
@@ -24,6 +31,12 @@ module.exports = {
         use: [
           'style-loader',
           'css-loader',
+          {
+            loader: "postcss-loader",
+            options: {
+              plugins: () => [autoprefixer()]
+            }
+          },
           {
             loader: 'sass-loader',
             options: {
@@ -64,8 +77,32 @@ module.exports = {
   },
   plugins: [
     new VueLoaderPlugin(),
+    new CleanWebpackPlugin(),
     new HtmlWebpackPlugin({
       template: path.resolve(__dirname, "public", "index.html")
     })
-  ]
+  ],
+  resolve: {
+    alias: {
+      vue$: "vue/dist/vue.runtime.esm.js"
+    },
+    extensions: ["*", ".js", ".vue", ".json"]
+  },
+  optimization: {
+    moduleIds: "deterministic",
+    runtimeChunk: "single",
+    splitChunks: {
+      cacheGroups: {
+        vendor: {
+          test: /[\\/]node_modules[\\/]/,
+          name: "vendors",
+          priority: -10,
+          chunks: "all"
+        }
+      }
+    }
+  },
+  devServer: {
+    historyApiFallback: true
+  }
 }
