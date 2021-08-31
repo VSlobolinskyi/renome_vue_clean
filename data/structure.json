@@ -1,4 +1,9 @@
 {
+  "cartMenu": {
+    "cost": "$44.50",
+    "view": "View cart",
+    "checkout": "Checkout"
+  },
   "navigation": {
     "logo": "Renome",
     "icons": {

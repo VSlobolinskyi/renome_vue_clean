@@ -19,10 +19,12 @@
         if(this.menuClosed){
           this.currentIcon = this.menuIcon.cross 
           this.menuClosed = false
+          this.$emit('open')
         }
         else {
           this.currentIcon = this.menuIcon.hamburgerButton
           this.menuClosed = true
+          this.$emit('close')
         }
       }
     }

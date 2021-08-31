@@ -1,6 +1,6 @@
 <template>
   <div>
-    <img :alt="cart.alt" :src="require(`../../assets/icons/${cart.src}`)" class="cart">
+    <img v-on:click="$emit('click')" :alt="cart.alt" :src="require(`../../assets/icons/${cart.src}`)" class="cart">
     <p class="cart-status">{{cart.cartStatus}}</p>
   </div>
 </template>
