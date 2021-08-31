@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <Navigation :navigation="structure.navigation"/>
+    <Navigation :navigation="structure.navigation" :cartMenu="structure.cartMenu" :mainMenu="structure.cartMenu"/>
     <Carousel :carousel="structure.carousel"/>
     <Building :images="structure.building.images"/>
     <About :about="structure.about"/>

@@ -1,8 +1,8 @@
 <template>
   <div class="icons">
-    <Cart :cart="icons.cart"/>
+    <Cart :cart="icons.cart" @click="toggleCartMenu"/>
     <div class="icons__divider"></div>
-    <MenuIcon :menuIcon="icons.menuIcon"/>
+    <MenuIcon :menuIcon="icons.menuIcon" @open="open" @close="close"/>
   </div>	
 </template>
 
@@ -16,7 +16,32 @@
       MenuIcon
     },
     props: {
-      icons: Object
+      icons: Object,
+      submenuOrderProp: Array
+    },
+    data() {
+      return {
+        submenuOrder: this.submenuOrderProp
+      }
+    },
+    methods: {
+      toggleCartMenu: function() {
+        let cartMenu = document.getElementById("cartMenu");
+        cartMenu.classList.remove("cart-menu--hidden");
+        cartMenu.classList.toggle("cart-menu--fade");
+        setTimeout(this.cartMenuUndisplay, 400);
+      },
+      cartMenuUndisplay: function() {
+        if (!cartMenu.classList.contains("cart-menu--fade")) {
+          cartMenu.classList.add("cart-menu--hidden");
+        }
+      },
+      close: function() {
+        this.$emit('close');
+      },
+      open: function() {
+        this.$emit('open');
+      }
     }
   }
 </script>
